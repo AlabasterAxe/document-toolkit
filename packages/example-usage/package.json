@@ -1,0 +1,27 @@
+{
+  "name": "@document-toolkit/example-usage",
+  "version": "1.0.0",
+  "description": "Example usage of @document-toolkit/generator",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "generate:pdf": "tsx src/index.ts --format=pdf",
+    "generate:docx": "tsx src/index.ts --format=docx",
+    "clean": "rm -rf dist output.*"
+  },
+  "dependencies": {
+    "@document-toolkit/generator": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
