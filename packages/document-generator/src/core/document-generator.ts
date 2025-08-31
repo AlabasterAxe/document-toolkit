@@ -6,7 +6,12 @@ import { join, dirname } from "path";
 import { spawn } from "child_process";
 import { load } from "cheerio";
 import matter from "gray-matter";
+import { fileURLToPath } from "url";
 import type { DocumentGenerationOptions, GenerationResult } from "../types/index.js";
+
+// ESM __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export class DocumentGenerator {
   /**
@@ -49,7 +54,7 @@ export class DocumentGenerator {
     } catch (error) {
       return {
         success: false,
-        outputPath: outputPath || "",
+        outputPath: options.outputPath || "",
         error: error instanceof Error ? error.message : String(error)
       };
     }
@@ -74,17 +79,11 @@ export class DocumentGenerator {
     writeFileSync(tempHtmlPath, finalHtml, "utf-8");
 
     return new Promise<void>((resolve, reject) => {
-      // Try to find pagedjs-cli in node_modules
-      const possiblePaths = [
-        join(process.cwd(), "node_modules", ".bin", "pagedjs-cli"),
-        join(__dirname, "..", "..", "node_modules", ".bin", "pagedjs-cli"),
-        "pagedjs-cli" // fallback to global
-      ];
-
-      let cliPath = possiblePaths[0];
-      // In a real implementation, you'd check which path exists
-
+      // Use npm script to run pagedjs-cli - much more robust than path detection
+      const packageDir = join(__dirname, "..", "..");
+      
       const args = [
+        "run", "generate-pdf", "--",
         tempHtmlPath,
         "-o",
         outputPath,
@@ -92,22 +91,23 @@ export class DocumentGenerator {
         timeout.toString()
       ];
 
-      const process = spawn(cliPath, args, {
+      const childProcess = spawn("npm", args, {
+        cwd: packageDir,
         stdio: ["pipe", "pipe", "pipe"],
       });
 
       let stdout = "";
       let stderr = "";
 
-      process.stdout?.on("data", (data) => {
+      childProcess.stdout?.on("data", (data: any) => {
         stdout += data.toString();
       });
 
-      process.stderr?.on("data", (data) => {
+      childProcess.stderr?.on("data", (data: any) => {
         stderr += data.toString();
       });
 
-      process.on("close", (code) => {
+      childProcess.on("close", (code: number | null) => {
         if (code === 0) {
           resolve();
         } else {
@@ -115,7 +115,7 @@ export class DocumentGenerator {
         }
       });
 
-      process.on("error", (error) => {
+      childProcess.on("error", (error: Error) => {
         reject(new Error(`Failed to start pagedjs-cli: ${error.message}`));
       });
     });

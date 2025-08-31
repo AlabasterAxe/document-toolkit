@@ -152,7 +152,7 @@ Static methods for processing document content:
 - Node.js 18+
 
 ### For PDF Generation
-- pagedjs-cli (automatically installed)
+- pagedjs-cli (automatically installed, executed via npm scripts for maximum portability)
 
 ### For DOCX Generation
 - docx library (automatically installed)

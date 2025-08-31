@@ -11,7 +11,11 @@ export type {
   ContentProcessor
 } from "./types/index.js";
 
+// Re-import for convenience function
+import { DocumentGenerator } from "./core/document-generator.js";
+import type { DocumentGenerationOptions } from "./types/index.js";
+
 // Convenience function for common use case
-export async function generateDocument(options: import("./types/index.js").DocumentGenerationOptions) {
+export async function generateDocument(options: DocumentGenerationOptions) {
   return DocumentGenerator.generateDocument(options);
 }
