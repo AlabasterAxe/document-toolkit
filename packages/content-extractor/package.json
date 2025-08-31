@@ -1,0 +1,23 @@
+{
+  "name": "@document-toolkit/content-extractor",
+  "version": "1.0.0",
+  "description": "Extract structured content from PDF, DOCX, and other document formats",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Content extractor not yet implemented'",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
