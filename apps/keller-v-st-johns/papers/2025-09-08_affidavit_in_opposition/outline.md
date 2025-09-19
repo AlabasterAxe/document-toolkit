@@ -1,0 +1,25 @@
+
+- Argument against Delay:
+    - The emergency injunctive relief requested is the primary goal of the action and the deadline to enroll is September 18th. Delaying would likely deprive Plaintiff of the relief to which he may be entitled.
+    - Defendants, especially St. John's, have had ample notice
+        - Sent Statement of Concerns (attached hereto as Exhibit) to St. John's Administration July 14th notifying them that they may be in violation of 4224(b)(1).
+        - Notified them of my intent to file a complaint August 1st.
+        - As to all other defendants, I have fully complied with the service requirements set forth by the court.
+- Private right of action
+    - Acknowledge that there is no express private right of action and that the legislative scheme envisioned enforcement by department of financial services
+    - Implied private right of action
+        - Sheehy Test
+            - (1) the plaintiff is one of the class for whose particular benefit the statute was enacted;
+            - (2) recognition of a private right of action would promote the legislative purpose; and
+            - (3) creation of such a right would be consistent with the legislative scheme.
+        - Application
+            - Particular Benefit
+                - Text of 4224(b)(1) class of people? insured people
+            - Promote legislative purpose
+                - yes, it would allow people to bring actions to prevent discrimination
+            - Consistent with legislative scheme
+                - reacknowledge DFS 
+                - Maimonides demonstrates that the existence of private right of action is fact dependent
+                    - If the enforcement scheme could not provide the relief requested, then a private right of action can harmonize with the legislative intent
+                    - Here, I am requesting emergency injunctive relief which the existing enforcement mechanism would not be equipped to provide.
+            - accordingly, I contend that the court should find a narrow private right of action in such cases.

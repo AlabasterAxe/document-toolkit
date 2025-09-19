@@ -1,0 +1,81 @@
+{
+  "arguments": [
+    {
+      "name": "Failure to State a Claim"
+    },
+    {
+      "name": "No Private Right of Action for 4224(b)(1)",
+      "support": [
+        {
+          "type": "binding precedent",
+          "reference": "Sparkes v. Morrison & Foerster Long-Term Disability Ins. Plan, 129 F. Supp. 2d 182",
+          "holding": "There is no private right of action under section 4224",
+          "support": [
+            {
+              "type": "application of standard",
+              "standard": {
+                "definition": {
+                  "type": "balancing test",
+                  "factors": [
+                    {
+                      "name": "the plaintiff is one of the class for whose particular benefit the statute was enacted",
+                      "refinements": []
+                    },
+                    {
+                      "name": "recognition of a private right of action would promote the legislative purpose",
+                      "refinements": []
+                    },
+                    {
+                      "name": "creation of such a right would be consistent with the legislative scheme",
+                      "refinements": []
+                    }
+                  ]
+                },
+                "support": [
+                  {
+                    "type": "binding precedent",
+                    "reference": "Uhr v. East Greenbush Central Sch. Dist., 94 N.Y.2d 32, 38, 698 N.Y.S.2d 609, 720 N.E.2d 886 (1999).",
+                    "holding": "The test for an implied right of action is whether (1) the plaintiff is one of the class for whose particular benefit the statute was enacted; (2) recognition of a private right of action would promote the legislative purpose; and (3) creation of such a right would be consistent with the legislative scheme."
+                  }
+                ]
+              },
+              "application": {
+                "holding": "Accordingly implying a private right of action would be inconsistent with two of the three prongs of the test set forth by the New York Court of Appeals in Uhr, no such right will be implied in this case.",
+                "support": [
+                  {
+                    "type": "application",
+                    "standard": "the plaintiff is one of the class for whose particular benefit the statute was enacted",
+                    "holding": "In the instant case, it is clear that Sparkes is not a member of a class for whose particular benefit the statute was enacted.",
+                    "support": [
+                      {
+                        "type": "persuasive precedent",
+                        "reference": "Dornberger v. Metropolitan Life Ins. Co., 961 F. Supp. 506, 547-48 (S.D.N.Y. 1997)",
+                        "holding": "Section 4224's prohibitions on discrimination not limited to \"small, insular minority groups.\""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "application",
+                    "standard": "recognition of a private right of action would promote the legislative purpose",
+                    "holding": "implying a private right of action would likely further the legislative purpose of eliminating discrimination by insurers"
+                  },
+                  {
+                    "type": "application",
+                    "standard": "creation of such a right would be consistent with the legislative scheme",
+                    "holding": "The legislative scheme of section 4224 does not suggest an intent to create a private right of action. The statute provides for enforcement by state insurance commissioners, indicating that the legislature intended for regulatory oversight rather than private litigation.",
+                    "support": [
+                      {
+                        "type": "unparsed",
+                        "contents": "Section 109 of the Insurance Law establishes the procedures for enforcement of various provisions of the Insurance Law by the Superintendent of Insurance. HN13 It does not provide for a private right of  [*188]  action. Buccino v. Continental Assur. Co., 578 F. Supp. 1518, 1526 (S.D.N.Y. 1983). Where the legislature intended that a particular provision of the Insurance Law be enforced through a private right of action, it expressly so provided in the terms of the statute."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

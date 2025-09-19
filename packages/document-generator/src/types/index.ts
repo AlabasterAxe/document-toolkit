@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export type DocumentFormat = "pdf" | "docx";
+export type DocumentFormat = "pdf" | "docx" | "html";
 
 export interface DocumentGenerationOptions {
   content: string;

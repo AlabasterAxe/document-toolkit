@@ -1,0 +1,250 @@
+{
+  "title": "Trade Secret Analysis: Willy Wonka and the Chocolate Factory",
+  "word_limit": 1000,
+  "structure": {
+    "I": {
+      "title": "Trade Secret Definition Under Federal Law",
+      "statutory_reference": "18 USC § 1839(3)",
+      "subsections": {
+        "A": {
+          "title": "Elements of a Trade Secret",
+          "content": {
+            "1": {
+              "element": "Information Type",
+              "statute": "18 USC § 1839(3) (financial, business, scientific, technical, economic, or engineering information, including patterns, plans, compilations, program devices, formulas, designs, prototypes, methods, techniques, processes, procedures, programs, or codes)"
+            },
+            "2": {
+              "element": "Reasonable Measures to Keep Secret",
+              "statute": "18 USC § 1839(3)(A)"
+            },
+            "3": {
+              "element": "Independent Economic Value",
+              "statute": "18 USC § 1839(3)(B)",
+              "sub_elements": {
+                "a": "actual or potential economic value",
+                "b": "not generally known to others",
+                "c": "not readily ascertainable through proper means",
+                "d": "others can obtain economic value from disclosure/use"
+              }
+            }
+          }
+        }
+      }
+    },
+    "II": {
+      "title": "Trade Secret Misappropriation Under Federal Law",
+      "statutory_reference": "18 USC § 1839(5)",
+      "case_law_framework": "Two broad categories: (1) Improper Means and (2) Confidential Relationship",
+      "subsections": {
+        "A": {
+          "title": "Acquisition by Improper Means",
+          "statute": "18 USC § 1839(5)(A)",
+          "case_authority": "E.I. DuPont deNemours & Co. v. Christopher (5th Cir. 1970)",
+          "case_facts": "Defendants hired to take aerial photographs of DuPont's under-construction methanol plant to reveal secret manufacturing process",
+          "case_holding": "Aerial photography of plant construction constitutes improper means; 'means which fall below the generally accepted standards of commercial morality and reasonable conduct'",
+          "elements": {
+            "1": "acquisition of trade secret of another",
+            "2": "person knows or has reason to know trade secret was acquired by improper means"
+          }
+        },
+        "B": {
+          "title": "Disclosure or Use Without Consent", 
+          "statute": "18 USC § 1839(5)(B)",
+          "elements": {
+            "1": "disclosure or use of trade secret without express or implied consent",
+            "2": {
+              "knowledge_categories": {
+                "i": {
+                  "type": "Used improper means to acquire",
+                  "statute": "18 USC § 1839(5)(B)(i)"
+                },
+                "ii": {
+                  "type": "Knowledge of improper acquisition/duty breach",
+                  "statute": "18 USC § 1839(5)(B)(ii)",
+                  "case_authority": "Smith v. Dravo Corp. (3d Cir. 1953)",
+                  "case_facts": "Dravo entered negotiations to purchase Smith's container business, received detailed confidential info including patents/blueprints/customer lists, then rejected purchase but used info to develop competing product",
+                  "case_holding": "Confidential relationship implied from limited purpose of disclosure (purchase negotiations); 'trust reposed' creates duty not to use information beyond negotiation purpose",
+                  "sub_categories": {
+                    "I": "derived from person who used improper means",
+                    "II": "acquired under circumstances giving rise to duty of secrecy/limited use",
+                    "III": "derived from person who owed duty of secrecy to owner"
+                  }
+                },
+                "iii": {
+                  "type": "Knowledge of accidental/mistaken acquisition",
+                  "statute": "18 USC § 1839(5)(B)(iii)"
+                }
+              }
+            }
+          }
+        },
+        "C": {
+          "title": "Improper Means Definition",
+          "statute": "18 USC § 1839(6)",
+          "case_elaboration": "DuPont v. Christopher: 'Commercial privacy must be protected from espionage which could not have been reasonably anticipated or prevented'",
+          "includes": "theft, bribery, misrepresentation, breach or inducement of breach of duty to maintain secrecy, espionage",
+          "excludes": "reverse engineering, independent derivation, other lawful means"
+        }
+      }
+    },
+    "III": {
+      "title": "Analysis: Is the Everlasting Gobstopper a Trade Secret?",
+      "analysis_framework": "Apply 18 USC § 1839(3) three-element test to the gobstopper",
+      "threshold_issue": {
+        "title": "Focus of Analysis",
+        "rationale": "Analysis must focus on whether the gobstopper itself qualifies as a trade secret, as this is what the child gave to Slugworth",
+        "scope": "While the manufacturing formula/process may also be trade secrets, the gobstopper is the subject of the alleged misappropriation"
+      },
+      "subsections": {
+        "A": {
+          "title": "Element 1: Information Type (Subject Matter)",
+          "statute": "18 USC § 1839(3) - qualifying information categories",
+          "analysis": {
+            "prototype_theory": {
+              "description": "Physical gobstopper qualifies as 'prototype' under federal statute",
+              "support": "Wonka's statement: 'At least, I don't think they do a few more tests' indicates ongoing development",
+              "legal_significance": "Prototype explicitly enumerated in 18 USC § 1839(3); development status strengthens protection"
+            },
+            "dupont_parallel": {
+              "case_authority": "E.I. DuPont deNemours & Co. v. Christopher (5th Cir. 1970)",
+              "comparison": "Like aerial photographs of under-construction plant that revealed secret process, physical gobstopper embodies/reveals secret formula",
+              "legal_analysis": "DuPont photographs were protectable despite being 'just pictures' - they contained/revealed trade secret information. Similarly, gobstopper 'contains' secret formula",
+              "distinction": "Gobstopper has even stronger protection as enumerated 'prototype' rather than mere embodiment of secret"
+            }
+          },
+          "conclusion": "Gobstopper qualifies under federal law both as prototype and as information embodying trade secrets"
+        },
+        "B": {
+          "title": "Element 2: Reasonable Measures to Keep Secret",
+          "statute": "18 USC § 1839(3)(A)",
+          "facts_to_analyze": [
+            "Factory sealed for years: 'Nobody ever goes in, nobody ever comes out'",
+            "Inventing Room locked and marked 'KEEP OUT'",
+            "Machine covered with fabric marked 'KEEP OUT'",
+            "Warning: 'No Touching, No Tasting, No Telling!'",
+            "Required solemn oath: 'never show them to another living soul'"
+          ],
+          "case_comparison": "DuPont v. Christopher - DuPont not required to put roof over under-construction plant; Wonka's extensive precautions far exceed reasonable measures standard",
+          "conclusion": "Wonka's multi-layered secrecy measures clearly satisfy reasonable precautions requirement"
+        },
+        "C": {
+          "title": "Element 3: Independent Economic Value from Secrecy",
+          "statute": "18 USC § 1839(3)(B)",
+          "facts_to_analyze": [
+            "Wonka's statement: 'If he succeeds, he'll ruin me' (Slugworth)",
+            "Revolutionary potential: 'revolutionize the industry'",
+            "Commercial viability: 'For children with very little pocket money'",
+            "Not publicly available/known",
+            "Slugworth's willingness to pay $10,000 + house + lifetime support"
+          ],
+          "legal_analysis": "Clear evidence of actual and potential economic value derived from secrecy; competitive significance demonstrated by Slugworth's fear and payment offer",
+          "conclusion": "Economic value element clearly satisfied"
+        }
+      }
+    },
+    "IV": {
+      "title": "Analysis: Slugworth's Liability for Trade Secret Misappropriation",
+      "defendant": "Slugworth",
+      "subsections": {
+        "A": {
+          "title": "Acquisition by Improper Means",
+          "statute": "18 USC § 1839(5)(A)",
+          "analysis": {
+            "acquisition_element": {
+              "facts": "Slugworth obtained Everlasting Gobstopper from child through bribery/inducement before public release, then reverse engineered formula",
+              "conclusion": "Element satisfied"
+            },
+            "knowledge_element": {
+              "facts": [
+                "Slugworth approached children before tour",
+                "Knew Wonka was developing secret invention",
+                "Offered large payment for secret formula",
+                "Knew children would breach oath of secrecy"
+              ],
+              "legal_analysis": "Actual knowledge that trade secret acquired by improper means (inducement of breach of duty)",
+              "case_comparison": "Similar to DuPont v. Christopher - Slugworth engaged in commercial espionage by inducing breach of confidential relationship",
+              "conclusion": "Element satisfied"
+            }
+          }
+        },
+        "B": {
+          "title": "Improper Means Analysis", 
+          "statute": "18 USC § 1839(6)",
+          "facts": [
+            "Bribery: $10,000 + house + lifetime support offered to child",
+            "Inducement of breach of duty: Children swore oath never to show gobstopper to 'another living soul'"
+          ],
+          "conclusion": "Improper means established via bribery and inducement of breach of duty",
+          "case_comparison": "Unlike DuPont (aerial photography), here bribery is explicit statutory improper means under 18 USC § 1839(6)(A)",
+          "reverse_engineering_distinction": {
+            "lawful_alternative": "Slugworth could have lawfully reverse engineered gobstopper AFTER public release under 18 USC § 1839(6)(B)",
+            "timing_issue": "Problem is pre-market acquisition through improper means (bribery/inducement), not the reverse engineering itself",
+            "legal_analysis": "Timing matters: reverse engineering released products = lawful; inducing breach to obtain unreleased products = improper means"
+          }
+        },
+        "C": {
+          "title": "Use Without Consent",
+          "statute": "18 USC § 1839(5)(B)",
+          "facts": "Slugworth manufactured and sold competing gobstoppers without Wonka's consent, before Wonka's public release",
+          "conclusion": "Element satisfied",
+          "timing_significance": "Use occurred before trade secret owner could commercialize, distinguishing from post-release reverse engineering"
+        }
+      }
+    },
+    "V": {
+      "title": "Analysis: Child's Liability for Trade Secret Misappropriation",
+      "defendant": "Child (age incapacity ignored per prompt)",
+      "subsections": {
+        "A": {
+          "title": "Disclosure Without Consent",
+          "statute": "18 USC § 1839(5)(B)",
+          "analysis": {
+            "disclosure_element": {
+              "facts": "Child gave Everlasting Gobstopper to Slugworth",
+              "conclusion": "Disclosure element satisfied"
+            },
+            "consent_element": {
+              "facts": "No express or implied consent from Wonka; violated explicit oath",
+              "conclusion": "No consent element satisfied"
+            }
+          }
+        },
+        "B": {
+          "title": "Knowledge Analysis",
+          "statute": "18 USC § 1839(5)(B)(ii)(II)",
+          "facts": [
+            "Child acquired gobstopper 'under circumstances giving rise to duty to maintain secrecy'",
+            "Explicit oath: 'solemnly swear to keep them for yourselves and never show them to another living soul'",
+            "Warnings about secrecy throughout tour",
+            "Child knew Slugworth was competitor seeking secret formula"
+          ],
+          "legal_analysis": "Child knew trade secret acquired under duty of secrecy and knew of duty to limit use",
+          "case_comparison": "Similar to Smith v. Dravo confidential relationship - child received gobstopper for limited purpose (personal use only) with express oath creating duty",
+          "conclusion": "Knowledge element satisfied under 18 USC § 1839(5)(B)(ii)(II)"
+        },
+        "C": {
+          "title": "Alternative Theory: Breach of Duty",
+          "statute": "18 USC § 1839(5)(B)(ii)(III)", 
+          "analysis": "Child derived knowledge from Wonka who owed no duty, but child directly owed duty to Wonka based on oath"
+        }
+      }
+    },
+    "VI": {
+      "title": "Conclusion",
+      "subsections": {
+        "A": {
+          "title": "Trade Secret Status",
+          "conclusion": "Everlasting Gobstopper formula qualifies as trade secret under 18 USC § 1839(3)"
+        },
+        "B": {
+          "title": "Slugworth Liability",
+          "conclusion": "Strong case for misappropriation under 18 USC § 1839(5)(A) - acquisition by improper means (bribery/inducement category)"
+        },
+        "C": {
+          "title": "Child Liability", 
+          "conclusion": "Strong case for misappropriation under 18 USC § 1839(5)(B)(ii)(II) - disclosure with knowledge of duty to maintain secrecy (confidential relationship category)"
+        }
+      }
+    }
+  }
+}

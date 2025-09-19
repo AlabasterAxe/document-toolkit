@@ -1,0 +1,36 @@
+{
+  "court": "SUPREME COURT OF THE STATE OF NEW YORK",
+  "county": "QUEENS",
+  "indexNumber": "723071/2025",
+  "plaintiffs": [
+    {
+      "name": "MATTHEW E. KELLER",
+      "role": "Plaintiff"
+    }
+  ],
+  "defendants": [
+    {
+      "name": "ST. JOHN'S UNIVERSITY",
+      "role": "Defendant"
+    },
+    {
+      "name": "RSC INSURANCE BROKERAGE, INC.",
+      "role": "Defendant"
+    },
+    {
+      "name": "AETNA STUDENT HEALTH AGENCY, INC.",
+      "role": "Defendant"
+    },
+    {
+      "name": "AETNA LIFE INSURANCE CO.",
+      "role": "Defendant"
+    }
+  ],
+  "attorney": {
+    "name": "Matthew Keller",
+    "proSe": true,
+    "address": "38-27 52nd Street, 2 FL, Sunnyside, NY 11104",
+    "phone": "(123) 456-7890",
+    "email": "matt.keller@example.com"
+  }
+}

@@ -43,8 +43,10 @@ export class DocumentGenerator {
         await this.generatePDF(renderedHtml, finalOutputPath, cssPath, timeout);
       } else if (format === "docx") {
         await this.generateDOCX(renderedHtml, finalOutputPath);
+      } else if (format === "html") {
+        await this.generateHTML(renderedHtml, finalOutputPath);
       } else {
-        throw new Error(`Unsupported format: ${format}`);
+        throw new Error(`Unsupported format: ${format}. Supported formats: pdf, docx, html`);
       }
 
       return {
@@ -64,7 +66,7 @@ export class DocumentGenerator {
    * Generate PDF using pagedjs-cli
    */
   private static async generatePDF(html: string, outputPath: string, cssPath?: string, timeout: number = 30000): Promise<void> {
-    // Write HTML to temporary file
+    // Write HTML to temporary file in dist directory
     const tempHtmlPath = join(dirname(outputPath), "temp-document.html");
     
     // If cssPath is provided, inject it into the HTML
@@ -207,5 +209,14 @@ export class DocumentGenerator {
 
     const buffer = await Packer.toBuffer(doc);
     writeFileSync(outputPath, buffer);
+  }
+
+  /**
+   * Generate HTML file
+   */
+  private static async generateHTML(html: string, outputPath: string): Promise<void> {
+    // Ensure the HTML is properly formatted with DOCTYPE and structure
+    const fullHtml = html.startsWith('<!DOCTYPE') ? html : `<!DOCTYPE html>\n${html}`;
+    writeFileSync(outputPath, fullHtml, "utf-8");
   }
 }

@@ -3,6 +3,7 @@ from: "Matthew Keller"
 to: "Eqra Muhammad, Professor Goldweber, Professor Calabrese"
 re: "Mock Client Interview Feedback for Eqra Muhammad"
 date: "September 19, 2025"
+template: MemoTemplate
 ---
 
 Overall, Eqra conducted a really strong mock client interview that followed the example intakes in our seminar. She clearly established confidentiality and the attorney-client relationship, created client rapport, and systematically gathered the required information from the client. The only suggestion for improvement I had was to make sure she's referencing the In-Person Intake Form during the interview to get a full picture of the client's financial picture.

@@ -10,9 +10,14 @@
     "build": "pnpm -r build",
     "clean": "pnpm -r clean",
     "test": "pnpm -r test",
-    "dev": "pnpm -r dev"
+    "dev": "pnpm -r dev",
+    "doc:build": "tsx scripts/build-document.ts"
   },
   "devDependencies": {
+    "@types/react": "^19.1.13",
+    "commander": "^11.0.0",
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.0.0",
     "typescript": "^5.0.0"
   },
   "engines": {

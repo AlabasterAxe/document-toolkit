@@ -1,0 +1,54 @@
+/* MemoTemplate-specific styles - extends base.css */
+
+/* Memo header */
+.memo-header {
+  margin-bottom: 2rem;
+}
+
+.memo-letterhead {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* Memo fields */
+.memo-fields {
+  margin-bottom: 2rem;
+}
+
+.memo-field {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.memo-field-label {
+  font-weight: bold;
+  min-width: 60px;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+.memo-field-value {
+  flex: 1;
+}
+
+.memo-divider {
+  border-top: 2px solid #000;
+  margin: 2rem 0;
+}
+
+/* Memo content */
+.memo-content {
+  text-align: justify;
+}
+
+/* Print specific memo styles */
+@media print {
+  .memo-header {
+    page-break-after: avoid;
+  }
+}
