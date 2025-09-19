@@ -62,3 +62,5 @@ temp-document.html
 # Package manager lock files (include pnpm-lock.yaml but exclude npm/yarn)
 package-lock.json
 yarn.lock
+
+dist/
