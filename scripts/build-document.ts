@@ -1,11 +1,12 @@
 #!/usr/bin/env tsx
 
 import { Command } from "commander";
-import { resolve, join, dirname, extname, basename } from "path";
+import { basename, dirname, extname, join, resolve } from "path";
 import { existsSync, readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import matter from "gray-matter";
 import * as React from "react";
+import { generateDocument } from "@document-toolkit/generator";
 // Note: We'll import this dynamically after building the package
 
 const program = new Command();
@@ -18,6 +19,7 @@ interface BuildConfig {
   format: "html" | "pdf" | "docx";
   template?: string;
   app?: string;
+  debug?: boolean;
 }
 
 program
@@ -28,13 +30,15 @@ program
   .option("-o, --output <output>", "Output file path")
   .option("-t, --template <template>", "Template name to use")
   .option("-a, --app <app>", "App context for template/component resolution")
+  .option("-d, --debug", "Whether to output intermediary debug files", false)
   .action(async (input: string, options) => {
     const config: BuildConfig = {
       input: resolve(input),
       format: options.format as "html" | "pdf" | "docx",
       output: options.output,
       template: options.template,
-      app: options.app
+      app: options.app,
+      debug: options.debug || false,
     };
 
     await buildDocument(config);
@@ -85,21 +89,25 @@ async function buildDocument(config: BuildConfig) {
       const Component = module.default || module[inputName];
 
       if (!Component) {
-        throw new Error(`No default export or named export '${inputName}' found in ${config.input}`);
+        throw new Error(
+          `No default export or named export '${inputName}' found in ${config.input}`,
+        );
       }
 
       // For TSX, we render the component directly
       content = ""; // The component will handle rendering
       templateProps = { Component };
     } else {
-      throw new Error(`Unsupported file type: ${inputExt}. Use .md, .tsx, or .jsx files.`);
+      throw new Error(
+        `Unsupported file type: ${inputExt}. Use .md, .tsx, or .jsx files.`,
+      );
     }
 
     // Auto-detect app context from file path if not specified
     let appContext = config.app;
-    if (!appContext && config.input.includes('/apps/')) {
-      const pathParts = config.input.split('/');
-      const appsIndex = pathParts.findIndex(part => part === 'apps');
+    if (!appContext && config.input.includes("/apps/")) {
+      const pathParts = config.input.split("/");
+      const appsIndex = pathParts.findIndex((part) => part === "apps");
       if (appsIndex >= 0 && pathParts[appsIndex + 1]) {
         appContext = pathParts[appsIndex + 1];
         console.log(`🔍 Auto-detected app context: ${appContext}`);
@@ -114,15 +122,13 @@ async function buildDocument(config: BuildConfig) {
 
     console.log(`📄 Generating ${config.format.toUpperCase()} document...`);
 
-    // Import generateDocument dynamically
-    const { generateDocument } = await import("../packages/document-generator/dist/index.js");
-
     const result = await generateDocument({
       content,
       template,
       templateProps: { ...templateProps, styles },
       format: config.format as "pdf" | "docx" | "html",
       outputPath: config.output,
+      debug: config.debug || false,
     });
 
     if (result.success) {
@@ -154,14 +160,26 @@ async function resolveTemplate(templateName?: string, appContext?: string) {
   if (appContext) {
     possiblePaths.push(
       join(rootDir, "apps", appContext, "templates", `${templateName}.tsx`),
-      join(rootDir, "apps", appContext, "templates", `${templateName}.jsx`)
+      join(rootDir, "apps", appContext, "templates", `${templateName}.jsx`),
     );
   }
 
   possiblePaths.push(
-    join(rootDir, "packages/document-generator/src/templates", `${templateName}.tsx`),
-    join(rootDir, "packages/document-generator/src/templates", `${templateName}.jsx`),
-    join(rootDir, "packages/document-generator/dist/templates", `${templateName}.js`)
+    join(
+      rootDir,
+      "packages/document-generator/src/templates",
+      `${templateName}.tsx`,
+    ),
+    join(
+      rootDir,
+      "packages/document-generator/src/templates",
+      `${templateName}.jsx`,
+    ),
+    join(
+      rootDir,
+      "packages/document-generator/dist/templates",
+      `${templateName}.js`,
+    ),
   );
 
   for (const templatePath of possiblePaths) {
@@ -175,35 +193,50 @@ async function resolveTemplate(templateName?: string, appContext?: string) {
   console.warn(`⚠️  Template '${templateName}' not found, using default`);
 
   // Import default template from the generator package
-  const generatorModule = await import("../packages/document-generator/dist/index.js");
+  const generatorModule = await import(
+    "../packages/document-generator/dist/index.js"
+  );
   return generatorModule.defaultTemplate || basicTemplate;
 }
 
 // Basic fallback template - return a simple template component
 const basicTemplate = (props: any) => {
-  const React = require('react');
-  return React.createElement('html', { lang: 'en' }, [
-    React.createElement('head', { key: 'head' }, [
-      React.createElement('meta', { key: 'charset', charSet: 'utf-8' }),
-      React.createElement('title', { key: 'title' }, props.title || 'Document'),
-      React.createElement('style', { key: 'style' }, `
+  const React = require("react");
+  return React.createElement("html", { lang: "en" }, [
+    React.createElement("head", { key: "head" }, [
+      React.createElement("meta", { key: "charset", charSet: "utf-8" }),
+      React.createElement("title", { key: "title" }, props.title || "Document"),
+      React.createElement(
+        "style",
+        { key: "style" },
+        `
         body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
         h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
         h2 { color: #555; margin-top: 2rem; }
-      `)
+      `,
+      ),
     ]),
-    React.createElement('body', { key: 'body' }, [
-      props.title && React.createElement('h1', { key: 'heading' }, props.title),
-      React.createElement('div', { key: 'content', dangerouslySetInnerHTML: { __html: props.markdownContent || '' } })
-    ])
+    React.createElement("body", { key: "body" }, [
+      props.title && React.createElement("h1", { key: "heading" }, props.title),
+      React.createElement("div", {
+        key: "content",
+        dangerouslySetInnerHTML: { __html: props.markdownContent || "" },
+      }),
+    ]),
   ]);
 };
 
-async function resolveStyles(templateName?: string, appContext?: string): Promise<string> {
+async function resolveStyles(
+  templateName?: string,
+  appContext?: string,
+): Promise<string> {
   let combinedStyles = "";
 
   // Always include base styles
-  const baseStylesPath = join(rootDir, "packages/document-generator/src/styles/base.css");
+  const baseStylesPath = join(
+    rootDir,
+    "packages/document-generator/src/styles/base.css",
+  );
   if (existsSync(baseStylesPath)) {
     let baseStyles = readFileSync(baseStylesPath, "utf-8");
 
@@ -213,13 +246,13 @@ async function resolveStyles(templateName?: string, appContext?: string): Promis
     if (existsSync(fontPath)) {
       console.log(`🔤 Embedding font: ${fontPath}`);
       const fontBuffer = readFileSync(fontPath);
-      const fontBase64 = fontBuffer.toString('base64');
+      const fontBase64 = fontBuffer.toString("base64");
       const dataUri = `data:font/truetype;base64,${fontBase64}`;
 
       // Replace the font URL reference
       baseStyles = baseStyles.replace(
         "url('fonts/centuryschoolbook.ttf')",
-        `url('${dataUri}')`
+        `url('${dataUri}')`,
       );
     }
 
@@ -237,14 +270,22 @@ async function resolveStyles(templateName?: string, appContext?: string): Promis
     if (appContext) {
       possibleStylePaths.push(
         join(rootDir, "apps", appContext, "styles", `${styleName}.css`),
-        join(rootDir, "apps", appContext, "styles", `${templateName}.css`)
+        join(rootDir, "apps", appContext, "styles", `${templateName}.css`),
       );
     }
 
     // Shared template styles
     possibleStylePaths.push(
-      join(rootDir, "packages/document-generator/src/styles", `${styleName}.css`),
-      join(rootDir, "packages/document-generator/src/styles", `${templateName}.css`)
+      join(
+        rootDir,
+        "packages/document-generator/src/styles",
+        `${styleName}.css`,
+      ),
+      join(
+        rootDir,
+        "packages/document-generator/src/styles",
+        `${templateName}.css`,
+      ),
     );
   }
 
@@ -259,7 +300,13 @@ async function resolveStyles(templateName?: string, appContext?: string): Promis
 
   // App-wide styles (if any)
   if (appContext) {
-    const appStylesPath = join(rootDir, "apps", appContext, "styles", "app.css");
+    const appStylesPath = join(
+      rootDir,
+      "apps",
+      appContext,
+      "styles",
+      "app.css",
+    );
     if (existsSync(appStylesPath)) {
       console.log(`🎨 Using app styles: ${appStylesPath}`);
       combinedStyles += readFileSync(appStylesPath, "utf-8") + "\n";

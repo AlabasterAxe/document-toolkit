@@ -10,6 +10,7 @@ export interface DocumentGenerationOptions {
   outputPath?: string;
   cssPath?: string;
   timeout?: number;
+  debug?: boolean;
 }
 
 export interface GenerationResult {

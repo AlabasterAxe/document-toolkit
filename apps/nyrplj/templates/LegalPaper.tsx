@@ -12,34 +12,6 @@ export interface LegalPaperProps {
   children?: React.ReactNode;
 }
 
-// Process both footnotes and endnotes in the content
-function processFootnotesAndEndnotes(htmlContent: string): {
-  content: string;
-  footnotes: string[];
-  endnotes: string[]
-} {
-  const footnotes: string[] = [];
-  const endnotes: string[] = [];
-  let footnoteCounter = 1;
-  let endnoteCounter = 1;
-
-  // First process footnotes (will render at bottom of page via CSS)
-  let content = htmlContent.replace(/\{\{FOOTNOTE:([^}]+)\}\}/g, (match, footnoteText) => {
-    footnotes.push(footnoteText.trim());
-    const footnoteNumber = footnoteCounter++;
-    return `<span class="footnote-content" data-footnote="${footnoteNumber}">${footnoteText.trim()}</span><span class="footnote-ref">${footnoteNumber}</span>`;
-  });
-
-  // Then process endnotes (will render at end of document)
-  content = content.replace(/\{\{ENDNOTE:([^}]+)\}\}/g, (match, endnoteText) => {
-    endnotes.push(endnoteText.trim());
-    const endnoteNumber = endnoteCounter++;
-    return `<span class="endnote-ref">${endnoteNumber}</span>`;
-  });
-
-  return { content, footnotes, endnotes };
-}
-
 export const LegalPaper: React.FC<LegalPaperProps> = ({
   title = "Legal Paper",
   author,
@@ -48,13 +20,8 @@ export const LegalPaper: React.FC<LegalPaperProps> = ({
   abstract,
   markdownContent,
   styles,
-  children
+  children,
 }) => {
-  // Process both footnotes and endnotes from the markdown content
-  const { content: processedContent, footnotes, endnotes } = markdownContent
-    ? processFootnotesAndEndnotes(markdownContent)
-    : { content: "", footnotes: [], endnotes: [] };
-
   return (
     <html lang="en">
       <head>
@@ -81,25 +48,11 @@ export const LegalPaper: React.FC<LegalPaperProps> = ({
 
         {/* Main Content */}
         <div className="document-content">
-          {processedContent && (
-            <div dangerouslySetInnerHTML={{ __html: processedContent }} />
+          {markdownContent && (
+            <div dangerouslySetInnerHTML={{ __html: markdownContent }} />
           )}
           {children}
         </div>
-
-        {/* Endnotes Section - appears after all content */}
-        {endnotes.length > 0 && (
-          <div className="endnotes-section">
-            <h2 className="endnotes-title">Endnotes</h2>
-            <ol className="endnotes-list">
-              {endnotes.map((endnote, index) => (
-                <li key={index} className="endnote-item">
-                  <div className="endnote-content">{endnote}</div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        )}
       </body>
     </html>
   );

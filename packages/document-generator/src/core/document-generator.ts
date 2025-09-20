@@ -40,9 +40,10 @@ export class DocumentGenerator {
         template: TemplateComponent,
         templateProps = {},
         format,
-        outputPath,
+        outputPath = join(process.cwd(), `output.${format}`),
         cssPath,
         timeout = 30000,
+        debug = false,
       } = options;
 
       // Parse front-matter from markdown if present
@@ -57,6 +58,19 @@ export class DocumentGenerator {
       // Convert markdown to HTML
       const htmlContent = marked(markdown);
 
+      if (debug) {
+        // Output intermediary HTML for debugging
+        const debugHtmlPath = outputPath
+          .replace(
+            /\.pdf$|\.docx$|\.html$/i,
+            "-htmlified-markdown-content.html",
+          );
+        writeFileSync(debugHtmlPath, htmlContent, "utf-8");
+        console.log(
+          `🛠️  Debug HTML-ified markdown written to: ${debugHtmlPath}`,
+        );
+      }
+
       // Render React template to HTML
       const renderedHtml = ReactDomServer.renderToStaticMarkup(
         React.createElement(TemplateComponent, {
@@ -66,16 +80,22 @@ export class DocumentGenerator {
         }),
       );
 
+      if (debug) {
+        // Output rendered HTML for debugging
+        const debugRenderedPath = outputPath
+          .replace(/\.pdf$|\.docx$|\.html$/i, "-rendered-template.html");
+        writeFileSync(debugRenderedPath, renderedHtml, "utf-8");
+        console.log(`🛠️  Debug rendered HTML written to: ${debugRenderedPath}`);
+      }
+
       // Determine output path
-      const finalOutputPath = outputPath ||
-        join(process.cwd(), `output.${format}`);
 
       if (format === "pdf") {
-        await this.generatePDF(renderedHtml, finalOutputPath, cssPath, timeout);
+        await this.generatePDF(renderedHtml, outputPath, cssPath, timeout);
       } else if (format === "docx") {
-        await this.generateDOCX(renderedHtml, finalOutputPath);
+        await this.generateDOCX(renderedHtml, outputPath);
       } else if (format === "html") {
-        await this.generateHTML(renderedHtml, finalOutputPath);
+        await this.generateHTML(renderedHtml, outputPath);
       } else {
         throw new Error(
           `Unsupported format: ${format}. Supported formats: pdf, docx, html`,
@@ -84,7 +104,7 @@ export class DocumentGenerator {
 
       return {
         success: true,
-        outputPath: finalOutputPath,
+        outputPath,
       };
     } catch (error) {
       return {
@@ -185,7 +205,7 @@ export class DocumentGenerator {
     const paragraphs: Paragraph[] = [];
 
     // Extract footnotes and endnotes from HTML elements
-    $("div.footnote[data-footnote-id]").each((_, el) => {
+    $("span.footnote[data-footnote-id]").each((_, el) => {
       const $el = $(el);
       const footnoteIdStr = $el.attr("data-footnote-id") ||
         footnoteIdTracker.current.toString();
@@ -203,7 +223,7 @@ export class DocumentGenerator {
       );
     });
 
-    $("div.endnote[data-endnote-id]").each((_, el) => {
+    $("span.endnote[data-endnote-id]").each((_, el) => {
       const $el = $(el);
       const endnoteIdStr = $el.attr("data-endnote-id") ||
         endnoteIdTracker.current.toString();
@@ -297,6 +317,9 @@ export class DocumentGenerator {
               size: { width: 12240, height: 15840 }, // Letter 8.5"x11"
               margin: { top: 1440, right: 1440, bottom: 2016, left: 1440 },
             },
+            endnoteProperties: {
+              numberFormat: "decimal", // Set section-level endnote numbering to decimal
+            },
           },
           children: paragraphs,
         },
@@ -348,7 +371,7 @@ export class DocumentGenerator {
       },
       renderer(token: { footnoteId: number; text: string }) {
         const { footnoteId, text } = token;
-        return `<span class="footnote-ref" data-footnote-id="${footnoteId}"></span><div class="footnote" data-footnote-id="${footnoteId}">${text}</div>`;
+        return `<span class="footnote-ref" data-footnote-id="${footnoteId}"></span><span class="footnote" data-footnote-id="${footnoteId}">${text}</span>`;
       },
     };
 
@@ -372,7 +395,7 @@ export class DocumentGenerator {
       },
       renderer(token: { endnoteId: number; text: string }) {
         const { endnoteId, text } = token;
-        return `<span class="endnote-ref" data-endnote-id="${endnoteId}"></span><div class="endnote" data-endnote-id="${endnoteId}">${text}</div>`;
+        return `<span class="endnote-ref" data-endnote-id="${endnoteId}"></span><span class="endnote" data-endnote-id="${endnoteId}">${text}</span>`;
       },
     };
 
@@ -386,7 +409,8 @@ export class DocumentGenerator {
   private static async processElementWithHtmlFootnotes(
     $el: Cheerio<AnyNode>,
   ): Promise<(string | FootnoteReferenceRun | EndnoteReferenceRun)[]> {
-    const children: (string | FootnoteReferenceRun | EndnoteReferenceRun)[] = [];
+    const children: (string | FootnoteReferenceRun | EndnoteReferenceRun)[] =
+      [];
 
     // Iterate through child nodes (text and elements)
     const childNodes = $el.contents();
@@ -395,26 +419,26 @@ export class DocumentGenerator {
       const node = childNodes.eq(i);
       const nodeType = node.get(0)?.type;
 
-      if (nodeType === 'text') {
+      if (nodeType === "text") {
         // Text node
-        const text = node.text().trim();
+        const text = node.text();
         if (text) {
           children.push(text);
         }
-      } else if (node.is('span.footnote-ref')) {
+      } else if (node.is("span.footnote-ref")) {
         // Footnote reference span
-        const footnoteId = parseInt(node.attr('data-footnote-id') || '0');
+        const footnoteId = parseInt(node.attr("data-footnote-id") || "0");
         children.push(await this.createFootnoteReference(footnoteId));
-      } else if (node.is('span.endnote-ref')) {
+      } else if (node.is("span.endnote-ref")) {
         // Endnote reference span
-        const endnoteId = parseInt(node.attr('data-endnote-id') || '0');
+        const endnoteId = parseInt(node.attr("data-endnote-id") || "0");
         children.push(await this.createEndnoteReference(endnoteId));
-      } else if (node.is('div.footnote, div.endnote')) {
+      } else if (node.is("span.footnote, span.endnote")) {
         // Skip footnote/endnote content divs - these are processed separately
         continue;
       } else {
         // Other elements - recursively process their text content
-        const text = node.text().trim();
+        const text = node.text();
         if (text) {
           children.push(text);
         }
@@ -439,9 +463,9 @@ export class DocumentGenerator {
     const $ = load(html);
 
     // Transform footnotes: combine footnote-ref spans with footnote divs
-    $('span.footnote-ref').each((_, refEl) => {
+    $("span.footnote-ref").each((_, refEl) => {
       const $ref = $(refEl);
-      const footnoteId = $ref.attr('data-footnote-id');
+      const footnoteId = $ref.attr("data-footnote-id");
 
       if (footnoteId) {
         // Find the corresponding footnote content
@@ -459,11 +483,11 @@ export class DocumentGenerator {
     });
 
     // Collect endnotes and generate endnotes section
-    const endnotes: { id: string, text: string }[] = [];
+    const endnotes: { id: string; text: string }[] = [];
 
-    $('span.endnote-ref').each((_, refEl) => {
+    $("span.endnote-ref").each((_, refEl) => {
       const $ref = $(refEl);
-      const endnoteId = $ref.attr('data-endnote-id');
+      const endnoteId = $ref.attr("data-endnote-id");
 
       if (endnoteId) {
         // Find the corresponding endnote content
@@ -491,17 +515,19 @@ export class DocumentGenerator {
       const endnotesHtml = `
         <div class="endnotes-section">
           <h2>Endnotes</h2>
-          ${endnotes.map(endnote =>
-            `<p class="endnote-item">
+          ${
+        endnotes.map((endnote) =>
+          `<p class="endnote-item">
               <span class="endnote-number">${endnote.id}.</span>
               <span class="endnote-text">${endnote.text}</span>
             </p>`
-          ).join('\n')}
+        ).join("\n")
+      }
         </div>
       `;
 
       // Append endnotes section to document body
-      $('body').append(endnotesHtml);
+      $("body").append(endnotesHtml);
     }
 
     return $.html();
@@ -524,5 +550,4 @@ export class DocumentGenerator {
   ): Promise<EndnoteReferenceRun> {
     return new EndnoteReferenceRun(id);
   }
-
 }
