@@ -1,3 +1,5 @@
+import * as React from "react";
+
 type Party = {
   name: string;
   role: string;

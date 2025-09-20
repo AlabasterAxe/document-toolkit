@@ -23,8 +23,9 @@
     "pagedjs": "^0.4.3",
     "pagedjs-cli": "^0.4.3",
     "gray-matter": "^4.0.3",
-    "docx": "^9.5.1",
-    "cheerio": "^1.0.0"
+    "docx": "file:../../../docx",
+    "cheerio": "^1.1.2",
+    "domhandler": "^5.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",

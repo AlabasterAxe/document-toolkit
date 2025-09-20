@@ -2,7 +2,9 @@ import * as React from "react";
 import { HeaUsptoResponseHeader, HeaderProps } from "../components/HeaHeader";
 
 type HeaUsptoResponseTemplateProps = HeaderProps & {
-  markdownContent: string;
+  markdownContent?: string;
+  styles?: string;
+  children?: React.ReactNode;
 };
 
 // Process page break macros for USPTO documents
@@ -19,20 +21,29 @@ function processPageBreaks(htmlContent: string): string {
 }
 
 export function HeaUsptoResponse(props: HeaUsptoResponseTemplateProps) {
-  const { markdownContent, ...headerProps } = props;
-  const processedContent = processPageBreaks(markdownContent);
+  const { markdownContent, styles, children, ...headerProps } = props;
+  const processedContent = markdownContent
+    ? processPageBreaks(markdownContent)
+    : "";
 
   return (
-    <html>
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <title>{headerProps.documentType}</title>
-        <link rel="stylesheet" href="legal-style.css" />
+        {styles && <style dangerouslySetInnerHTML={{ __html: styles }} />}
       </head>
       <body>
         <HeaUsptoResponseHeader {...headerProps} />
-        <main dangerouslySetInnerHTML={{ __html: processedContent }} />
+        <main>
+          {markdownContent && (
+            <div dangerouslySetInnerHTML={{ __html: processedContent }} />
+          )}
+          {children}
+        </main>
       </body>
     </html>
   );
 }
+
+export default HeaUsptoResponse;

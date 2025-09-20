@@ -1,39 +1,5 @@
 /* Base styles for all document templates */
-body {
-  font-family: 'Times New Roman', serif;
-  font-size: 12pt;
-  line-height: 1.6;
-  margin: 1in;
-  color: #000;
-  background: white;
-}
-
-/* Typography */
-h1 {
-  font-size: 16pt;
-  font-weight: bold;
-  margin: 2rem 0 1rem 0;
-  color: #333;
-}
-
-h2 {
-  font-size: 14pt;
-  font-weight: bold;
-  margin: 1.5rem 0 0.75rem 0;
-  color: #444;
-}
-
-h3 {
-  font-size: 12pt;
-  font-weight: bold;
-  margin: 1rem 0 0.5rem 0;
-  color: #555;
-}
-
-p {
-  margin: 0 0 1rem 0;
-  text-align: justify;
-}
+/* Note: Main body and typography styles are defined below at line 109+ */
 
 /* Lists */
 ul, ol {
@@ -72,17 +38,254 @@ th {
   font-weight: bold;
 }
 
-/* Print styles */
+/* Print styles - additional to those defined below */
 @media print {
-  body {
-    margin: 0.75in;
+  /* Prevent widows and orphans */
+  p {
+    orphans: 3;
+    widows: 3;
   }
 
-  h1, h2, h3 {
-    page-break-after: avoid;
+  /* Avoid breaking inside elements */
+  blockquote, table, pre {
+    page-break-inside: avoid;
   }
 }
 
+/* Local Century Schoolbook Font */
+@font-face {
+  font-family: 'Century Schoolbook Local';
+  src: url('fonts/centuryschoolbook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Basic Document Styles */
+body {
+  font-family: "Century Schoolbook Local", "Century Schoolbook", "Century Schoolbook L", "New Century Schoolbook", "Times New Roman", serif;
+  font-size: 12pt;
+  line-height: 2; /* Double-spaced */
+}
+
+/* Paragraph indentation */
+p {
+  text-indent: 0.5in; /* Standard legal document indentation */
+}
+
+/* Paragraph numbering */
+.paragraph-number {
+  font-weight: normal;
+  margin-right: 0.2em;
+}
+
+/* Page Layout & Margins with Paged.js footnote support */
 @page {
-  margin: 0.75in;
+  size: 8.5in 11in;
+  margin: 1in 1in 1.4in 1in; /* Increase bottom margin for footnotes */
+}
+
+
+/* Caption Styling */
+.caption-container {
+  margin-bottom: 2em;
+}
+
+.court-header {
+  text-align: left;
+  margin-bottom: 1em;
+  font-weight: normal;
+  line-height: 1; /* Single spaced */
+}
+
+.caption-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* No table-level borders */
+}
+
+.caption-cell {
+  vertical-align: top;
+  padding: 10px;
+}
+
+.caption-cell.parties {
+  width: 60%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  /* No left border */
+}
+
+.caption-cell.metadata {
+  width: 40%;
+  padding-left: 10px;
+  /* No borders on defendant/index cell */
+}
+
+.caption-vs {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.index-no {
+  text-align: left;
+}
+
+.document-type {
+  text-align: left;
+  margin-top: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+
+
+/* Paged.js Footnote Styling */
+.footnote-ref {
+  vertical-align: super;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.footnote {
+  float: footnote;
+}
+
+/* Paged.js footnote styling */
+.footnote-content {
+  float: footnote;
+  font-size: 10pt;
+  text-align: justify;
+  margin-bottom: 1em; /* Reduce bottom margin */
+}
+
+/* Remove automatic footnote numbering - let React component handle it */
+.footnote-content::footnote-call {
+  content: "";  /* Remove auto-numbering */
+}
+
+.footnote-content::footnote-marker {
+  content: "";  /* Remove auto-numbering markers */
+}
+
+/* Style the manually added footnote number */
+.footnote-number {
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+/* Paged.js footnote area styling - only show border when footnotes exist */
+.pagedjs_footnote_area {
+  border-top: 1pt solid black;
+  margin-top: 0.15in;
+  padding-top: 0.1in;
+  padding-bottom: 0.05in; /* Small bottom padding */
+}
+
+.pagedjs_footnote_area:has(.pagedjs_footnote_empty) {
+  display: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagedjs_footnote_content {
+  font-size: 10pt;
+  line-height: 1.4; /* Match other footnote line height */
+  text-align: justify;
+  padding-bottom: 0; /* Remove any default padding */
+}
+
+/* Ensure footnote area has proper overflow handling */
+.pagedjs_footnote_area {
+  overflow: visible; /* Don't cut off content */
+  box-sizing: border-box;
+}
+
+/* Additional spacing for last footnote to prevent cutoff */
+.pagedjs_footnote_content:last-child {
+  margin-bottom: 0.1em;
+  padding-bottom: 0.05em;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5em 0 1em 0;
+  line-height: 2; /* Double-spaced */
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 1.5em 0 1em 0;
+  line-height: 2; /* Double-spaced */
+}
+
+h3, h4 {
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 1.5em 0 1em 0;
+  line-height: 2; /* Double-spaced */
+}
+
+/* Signature Block Styling */
+.signature-block {
+  margin-top: 3em;
+  page-break-inside: avoid; /* Keep signature block together */
+}
+
+.signature-date {
+  margin-bottom: 2em;
+  line-height: 1; /* Single spaced */
+}
+
+.current-date {
+  margin-top: 0.5em;
+}
+
+.signature-section {
+  margin-left: 50%; /* Tab over to right side but remain left-justified */
+  max-width: 50%;
+  line-height: 1; /* Single spaced */
+}
+
+.signature-by {
+  margin-bottom: 0.5em;
+}
+
+.signature-line {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  width: 250px;
+  height: 1.2em;
+}
+
+.signer-name {
+  margin-bottom: 0.3em;
+  font-weight: normal;
+}
+
+.signer-title {
+  margin-bottom: 0.3em;
+}
+
+.signer-address {
+  margin-bottom: 0.3em;
+}
+
+.signer-phone {
+  margin-bottom: 0;
+}
+
+.numbered-paragraph > p {
+  display: inline;
 }

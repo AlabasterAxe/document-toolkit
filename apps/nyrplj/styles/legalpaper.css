@@ -1,0 +1,132 @@
+/* Legal Paper Template Styles - extends base.css */
+
+/* Title Page */
+.title-page {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.paper-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+}
+
+.author-info {
+  margin: 1rem 0;
+  font-size: 12pt;
+}
+
+.date-info {
+  margin-top: 2rem;
+  font-size: 12pt;
+}
+
+/* Abstract */
+.abstract {
+  margin: 2rem 0;
+  page-break-after: always;
+}
+
+.abstract-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.abstract-content {
+  text-align: justify;
+  text-indent: 0;
+  line-height: 1.5;
+}
+
+/* Document Content */
+.document-content {
+  margin-top: 2rem;
+}
+
+/* Footnotes - appear at bottom of page using Paged.js */
+.footnote-content {
+  float: footnote;
+  font-size: 10pt;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.footnote-ref {
+  vertical-align: super;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 0.1em;
+}
+
+/* Remove automatic footnote numbering - we handle it manually */
+.footnote-content::footnote-call {
+  content: "";
+}
+
+.footnote-content::footnote-marker {
+  content: "";
+}
+
+/* Endnotes - appear at end of document */
+.endnotes-section {
+  page-break-before: always;
+  margin-top: 2rem;
+}
+
+.endnotes-title {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.endnotes-list {
+  list-style-type: decimal;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.endnote-item {
+  margin: 1rem 0;
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+  text-align: justify;
+}
+
+.endnote-content {
+  font-size: 12pt;
+  line-height: 2;
+}
+
+.endnote-ref {
+  vertical-align: super;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 0.1em;
+}
+
+/* Print-specific styles */
+@media print {
+  .title-page {
+    page-break-after: always;
+  }
+
+  .abstract {
+    page-break-after: always;
+  }
+
+  .endnotes-section {
+    page-break-before: always;
+  }
+
+  /* Ensure footnotes don't break awkwardly */
+  .footnote-content {
+    orphans: 2;
+    widows: 2;
+  }
+}

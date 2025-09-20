@@ -51,4 +51,23 @@
   .memo-header {
     page-break-after: avoid;
   }
+
+  /* Allow natural page breaks within content, but keep header together */
+  .memo-letterhead {
+    page-break-after: avoid;
+  }
+
+  .memo-fields {
+    page-break-after: avoid;
+  }
+
+  /* Ensure divider stays with header */
+  .memo-divider {
+    page-break-after: avoid;
+  }
+
+  /* Allow content to break naturally across pages */
+  .memo-content {
+    page-break-inside: auto;
+  }
 }

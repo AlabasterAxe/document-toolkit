@@ -1,0 +1,11 @@
+/* App-wide styles for nyrplj - overrides base styles */
+
+/* Override Century Schoolbook font with Times New Roman */
+body {
+  font-family: "Times New Roman", "Times", serif !important;
+}
+
+/* Ensure all text elements use the override */
+h1, h2, h3, h4, h5, h6, p, div, span, li, td, th {
+  font-family: "Times New Roman", "Times", serif !important;
+}

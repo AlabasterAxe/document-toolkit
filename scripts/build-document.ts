@@ -205,7 +205,25 @@ async function resolveStyles(templateName?: string, appContext?: string): Promis
   // Always include base styles
   const baseStylesPath = join(rootDir, "packages/document-generator/src/styles/base.css");
   if (existsSync(baseStylesPath)) {
-    combinedStyles += readFileSync(baseStylesPath, "utf-8") + "\n";
+    let baseStyles = readFileSync(baseStylesPath, "utf-8");
+
+    // Handle font embedding for Century Schoolbook
+    const fontPath = join(rootDir, "fonts/centuryschoolbook.ttf");
+
+    if (existsSync(fontPath)) {
+      console.log(`🔤 Embedding font: ${fontPath}`);
+      const fontBuffer = readFileSync(fontPath);
+      const fontBase64 = fontBuffer.toString('base64');
+      const dataUri = `data:font/truetype;base64,${fontBase64}`;
+
+      // Replace the font URL reference
+      baseStyles = baseStyles.replace(
+        "url('fonts/centuryschoolbook.ttf')",
+        `url('${dataUri}')`
+      );
+    }
+
+    combinedStyles += baseStyles + "\n";
   }
 
   // Add template-specific styles if they exist
