@@ -232,7 +232,10 @@ export class DocumentGenerator {
 
       endnotes[endnoteId] = {
         children: [
-          new Paragraph({ children: [new TextRun({ text: content })] }),
+          new Paragraph({
+            children: [new TextRun({ text: content })],
+            spacing: { after: 240 }, // Add 12pt space after each endnote
+          }),
         ],
       };
       endnoteIdTracker.current = Math.max(
@@ -337,10 +340,13 @@ export class DocumentGenerator {
     html: string,
     outputPath: string,
   ): Promise<void> {
+    // Transform HTML to properly handle footnotes and endnotes like PagedJS does
+    const processedHtml = this.transformHtmlForHtml(html);
+
     // Ensure the HTML is properly formatted with DOCTYPE and structure
-    const fullHtml = html.startsWith("<!DOCTYPE")
-      ? html
-      : `<!DOCTYPE html>\n${html}`;
+    const fullHtml = processedHtml.startsWith("<!DOCTYPE")
+      ? processedHtml
+      : `<!DOCTYPE html>\n${processedHtml}`;
     writeFileSync(outputPath, fullHtml, "utf-8");
   }
 
@@ -454,6 +460,115 @@ export class DocumentGenerator {
     }
 
     return children;
+  }
+
+  /**
+   * Transform intermediary HTML for HTML output with proper footnote/endnote handling
+   */
+  private static transformHtmlForHtml(html: string): string {
+    const $ = load(html);
+
+    // Transform footnotes: replace footnote-ref spans with superscript numbers and collect footnotes
+    const footnotes: { id: string; text: string }[] = [];
+
+    $("span.footnote-ref").each((_, refEl) => {
+      const $ref = $(refEl);
+      const footnoteId = $ref.attr("data-footnote-id");
+
+      if (footnoteId) {
+        // Find the corresponding footnote content
+        const $footnoteDiv = $(`.footnote[data-footnote-id="${footnoteId}"]`);
+        if ($footnoteDiv.length > 0) {
+          const footnoteText = $footnoteDiv.text();
+
+          // Replace the footnote-ref span with superscript number linked to footnote
+          $ref.replaceWith(`<sup><a href="#footnote-${footnoteId}" id="footnote-ref-${footnoteId}">${footnoteId}</a></sup>`);
+
+          // Collect footnote for later generation
+          footnotes.push({ id: footnoteId, text: footnoteText });
+
+          // Remove the footnote div (we'll regenerate at end)
+          $footnoteDiv.remove();
+        }
+      }
+    });
+
+    // Collect endnotes and generate endnotes section
+    const endnotes: { id: string; text: string }[] = [];
+
+    $("span.endnote-ref").each((_, refEl) => {
+      const $ref = $(refEl);
+      const endnoteId = $ref.attr("data-endnote-id");
+
+      if (endnoteId) {
+        // Find the corresponding endnote content
+        const $endnoteDiv = $(`.endnote[data-endnote-id="${endnoteId}"]`);
+        if ($endnoteDiv.length > 0) {
+          const endnoteText = $endnoteDiv.text();
+
+          // Replace endnote-ref with superscript number linked to endnote
+          $ref.replaceWith(`<sup><a href="#endnote-${endnoteId}" id="endnote-ref-${endnoteId}">${endnoteId}</a></sup>`);
+
+          // Collect endnote for later generation
+          endnotes.push({ id: endnoteId, text: endnoteText });
+
+          // Remove the endnote div (we'll regenerate at end)
+          $endnoteDiv.remove();
+        }
+      }
+    });
+
+    // Generate footnotes section if we have footnotes
+    if (footnotes.length > 0) {
+      // Sort footnotes by ID to maintain order
+      footnotes.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
+      const footnotesHtml = `
+        <div class="footnotes-section" style="border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem;">
+          <h3>Footnotes</h3>
+          ${
+        footnotes.map((footnote) =>
+          `<p class="footnote-item" id="footnote-${footnote.id}">
+              <a href="#footnote-ref-${footnote.id}">${footnote.id}.</a>
+              ${footnote.text}
+            </p>`
+        ).join("\n")
+      }
+        </div>
+      `;
+
+      // Insert footnotes before endnotes if any, otherwise at end of document
+      if (endnotes.length > 0) {
+        $(".document-content").append(footnotesHtml);
+      } else {
+        $("body").append(footnotesHtml);
+      }
+    }
+
+    // Generate endnotes section if we have endnotes
+    if (endnotes.length > 0) {
+      // Sort endnotes by ID to maintain order
+      endnotes.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
+      const endnotesHtml = `
+        <div class="endnotes-section" style="border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem;">
+          <h3>Endnotes</h3>
+          ${
+        endnotes.map((endnote) =>
+          `<p class="endnote-item" id="endnote-${endnote.id}">
+              <a href="#endnote-ref-${endnote.id}">${endnote.id}.</a>
+              ${endnote.text}
+            </p>`
+        ).join("\n")
+      }
+        </div>
+      `;
+
+      // Append endnotes section to document body
+      $("body").append(endnotesHtml);
+    }
+
+    return $.html();
   }
 
   /**
