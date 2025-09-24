@@ -1,0 +1,27 @@
+
+The most common type of deposition is a discovery deposition. In a discovery deposition, the examining lawyer attempts to elicit as much information as possible from the deponent. The purpose primarily is investigatory. You want to discover everything the deponent knows that is related to your case. This information should include sources of proof, such as the identities of potential witnesses, documents, and physical evidence. The key thing to remember in a discovery deposition is that you are trying to obtain information of which you otherwise may be unaware. ^5
+
+# Typical Discovery Deposition Questions 
+
+> "Tell me about..."
+> "What happened next?"
+> "What did she say next?"
+> "Describe the ..."
+> "Is there anything else?"
+> "Was anyone else there?"
+> "Does anyone else know anything about . . .?"
+
+When your purpose is to elicit information, it is especially important to ask broad, open-ended questions. You want the deponent to talk and direct you to the paths you should pursue. Your questions should be short and open-ended; it is the deponent who should be talking in paragraphs. In the end, the transcript should be at least 90 percent the deponent and no more than 10 percent you. Be especially cautious about cutting off the deponent during a discovery deposition. If you are uncertain whether the deponent has completely finished answering, pause for a few seconds before posing your next question. Such a pause sometimes will cause the deponent to continue talking. If it does not, you may want to ask whether the witness has any more to add.
+
+Your demeanor may be especially critical to the success of a discovery deposition. This type of deposition is most suited to a friendly, relaxed style. The saying, "you can catch more flies with honey than you can with vinegar," applies even to sophisticated deponents. You want the witness to like you and want to help you; at a minimum, you want the witness to trust you and let his or her guard down. To achieve this, smile and be pleasant when you introduce yourself. Chat before the deposition starts, if possible, about the weather, the local sports team, or some noncontroversial issue unrelated to the case. Try to be patient and helpful during the deposition. If appropriate, be empathetic. ^6
+![img-0.jpeg](img-0.jpeg)
+
+Listening, as always, is critical. So is maintaining eye contact. While the deponent is answering a question, jot down very brief notes (a word or two) regarding areas to pursue in more detail. Do not let note taking interfere with maintaining eye contact. Once you break eye contact the witness may stop talking. Similarly, maintaining eye contact without interruption may encourage the witness to continue providing information.
+
+Once you are certain there is nothing else to elicit on a given question, then it is time for follow-up. It generally is least confusing and most effective to exhaust all follow-through questions in one area before going on to the next. Each follow-up question on a particular subject should get progressively narrower.
+
+What you should end up with is an answer tree. For example, one answer, like the trunk of a tree, may lead to four different large branches to follow. It is best to follow through completely to the end of one major branch, including all the twigs sprouting along the way, before you return to the trunk and proceed down another major branch. What you will end up with is a transcript that will be packed full of information that will be useful to you, but it will not be a narrative that you would want to read to a jury.
+
+
+^5 The Federal Rules of Civil Procedure allow discovery regarding any nonprivileged matter "relevant to any party's claim or defense and proportional to the needs of the case." FED. R. CIV. P. 26(b)(1). The proportionality requirement invites consideration of "the importance of the issues at stake in the action, the amount in controversy, the parties' relative access to relevant information, the parties' resources, the importance of the discovery in resolving the issues, and whether the burden or expense of the proposed discovery outweighs its likely benefit." Id. The proportionality concept originally appeared as part of Rule 26(b)(1) in 1983, but proportionality factors were subsequently moved to other rule subparts until 2015, when proportionality language was reinserted in 26(b)(1). The reinsertion of proportionality factors replaced language that broadly allowed the discovery of any information that was "reasonably calculated to lead to the discovery of admissible evidence." While the re-emergence of the proportionality language in Rule 26(b)(1) may impact the allowable scope of and objections to demands made through other discovery methods, it is unlikely to have much effect on a typical discovery deposition being conducted in good faith, particularly given that other rules already limit the number and length of depositions. See Fi:D. R. Civ. P. 30(a)(2)(A)(i), (d)(1).
+^6 One commentator who ascribes to this view of taking depositions advises that you, as the deposing attorney, treat the witness as you would a guest in your home, that you develop a genuine interest in the witness, that you be self-effacing to let the witness see you as a "regular" person, that you periodically compliment the witness, and that you ask the witness for help in understanding the events at issue. Edward G. Connette, How to Take Better Depositions and Perhaps Improve Your Marriage, Litig., Spring 2005, at 3, 7-8.

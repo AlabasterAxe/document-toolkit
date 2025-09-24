@@ -1,0 +1,13 @@
+
+Once you have reviewed your file and blueprint, you should prepare a fairly detailed outline of questions for the particular witness. This outline may take a number of different forms. Some lawyers write out specific questions. This is particularly desirable in two instances. The first involves hypotheticals directed to expert witnesses. The second involves questions that will set up dispositive motions. In both cases, you want to ensure that the questions do not omit key facts that later give the other side room to disavow deposition answers.
+
+Other lawyers simply prepare lists of topics to cover. They fear the loss of spontaneity and the risk of inadequate follow through that comes from having questions fully written out. Deposition outlines are not television scripts.
+
+Either approach can be made to work most of the time. Pick the one that suits your comfort level. Generally, we prefer the outline approach. except when setting up an expert or a claim or defense for a dispositive motion, because it tends to better enable the questioning lawyer to listen carefully to the deponent and re-order questions or depart temporarily from the prepared outline entirely. Some attorneys use a separate page or set of notecards for each topic of their outline. This can be a useful technique to reorder the topics during the deposition. If, for example, the witness gets into another topic the questioning attorney was not intending to address until later, the attorney can consider turning directly and immediately to the separate part of the attorney's outline dealing with that topic rather than circling back to the witness's response and that topic later in the deposition.
+
+To free yourself to listen and follow through, you need to have a way of recording answers. One device is to leave space in your outline underneath each question or topic to record an answer in shorthand. Another device is to write each question or topic on the left half of a page, and then leave space on the right half for the associated response. Yet another device is to count on a colleague to sit through the deposition and keep careful notes to help ensure that you have adequately exhausted each line of inquiry.
+
+Again, any of these approaches can work. You just need to ensure that, if you have predetermined that you need to get five key pieces of testimony from the particular deponent, you have a way to check that you have actually obtained those five pieces before you adjourn the deposition.
+
+
+^9 There is a helpful four-page summary of what lawyers should do in preparing to take a deposition in James W. McElhaney, The Deposition Notchook, Litig., Summer 2001, at 55.

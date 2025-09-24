@@ -1,0 +1,4 @@
+
+Direct exams of friendly and neutral witnesses must generally proceed through non-leading questions - an essentially important point if the depositions are to preserve testimony for use at trial. This restriction does not apply to hostile witnesses, who can be examined in a deposition just as they would be crossexamined at trial. ^19
+
+Keep this firmly in mind. One of the authors was once in a series of depositions opposite a lawyer who seemed incapable of asking a non-leading question, even of friendly witnesses. After a while, lawyers on the opposite side began objecting to virtually every question as impermissible. The questioning lawyer refused to rephrase any of the questions. If the case had gone to trial, there would have been all-out warfare over whether large portions of the transcripts were usable.

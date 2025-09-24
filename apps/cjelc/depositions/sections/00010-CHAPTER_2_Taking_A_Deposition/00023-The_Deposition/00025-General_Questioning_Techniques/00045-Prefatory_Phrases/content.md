@@ -1,0 +1,2 @@
+
+When framing your questions, be vigilant about avoiding prefatory phrases. Common prefatory phrases include: "Do you remember whether . . . ?", "Do you recall whether . . . ?", and "Do you know whether . . . ?" Prefatory phrases confuse the record and may render the answers useless. A simple "yes" or "no" response may pertain either to the prefatory phrase or to the subsequent substantive part of the question.

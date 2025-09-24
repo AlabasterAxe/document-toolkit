@@ -1,0 +1,1278 @@
+{
+  "type": "document-ocr",
+  "bookName": "depositions",
+  "version": "1.0",
+  "config": {
+    "pageOffset": 17,
+    "ocrProvider": "gemini",
+    "sectionFormat": "markdown"
+  },
+  "toc": [
+    {
+      "name": "CHAPTER 1 The Big Picture",
+      "depth": 1,
+      "page": 1
+    },
+    {
+      "name": "Begin at the End – Victory",
+      "depth": 2,
+      "page": 1
+    },
+    {
+      "name": "Consider Deposition Advantages and Disadvantages",
+      "depth": 2,
+      "page": 4
+    },
+    {
+      "name": "Advantages",
+      "depth": 3,
+      "page": 5
+    },
+    {
+      "name": "Disadvantages",
+      "depth": 3,
+      "page": 6
+    },
+    {
+      "name": "Consider the Specific Witnesses in Your Case",
+      "depth": 2,
+      "page": 6
+    },
+    {
+      "name": "Taking Their Depositions",
+      "depth": 3,
+      "page": 6
+    },
+    {
+      "name": "Defending Their Depositions",
+      "depth": 3,
+      "page": 8
+    },
+    {
+      "name": "Put Everything Together",
+      "depth": 2,
+      "page": 9
+    },
+    {
+      "name": "CHAPTER 2 Taking A Deposition",
+      "depth": 1,
+      "page": 11
+    },
+    {
+      "name": "Deposition Purposes and Styles",
+      "depth": 2,
+      "page": 12
+    },
+    {
+      "name": "Discover Information",
+      "depth": 3,
+      "page": 12
+    },
+    {
+      "name": "Pin the Deponent Down",
+      "depth": 3,
+      "page": 15
+    },
+    {
+      "name": "Get Admissions for Dispositive Motions",
+      "depth": 3,
+      "page": 16
+    },
+    {
+      "name": "Preserve Trial Testimony",
+      "depth": 3,
+      "page": 18
+    },
+    {
+      "name": "Assess the Witness",
+      "depth": 3,
+      "page": 18
+    },
+    {
+      "name": "Show of Strength",
+      "depth": 3,
+      "page": 20
+    },
+    {
+      "name": "Preparation",
+      "depth": 2,
+      "page": 21
+    },
+    {
+      "name": "File Review",
+      "depth": 3,
+      "page": 21
+    },
+    {
+      "name": "Question Outline",
+      "depth": 3,
+      "page": 21
+    },
+    {
+      "name": "Notices and Subpoenas",
+      "depth": 3,
+      "page": 22
+    },
+    {
+      "name": "Miscellaneous Logistics",
+      "depth": 3,
+      "page": 23
+    },
+    {
+      "name": "The Deposition",
+      "depth": 2,
+      "page": 26
+    },
+    {
+      "name": "Introductory Remarks and Instructions",
+      "depth": 3,
+      "page": 26
+    },
+    {
+      "name": "General Questioning Techniques",
+      "depth": 3,
+      "page": 28
+    },
+    {
+      "name": "Type of Witness",
+      "depth": 4,
+      "page": 28
+    },
+    {
+      "name": "What to Ask",
+      "depth": 4,
+      "page": 29
+    },
+    {
+      "name": "Background",
+      "depth": 5,
+      "page": 30
+    },
+    {
+      "name": "Inquiries about subpoenaed documents",
+      "depth": 5,
+      "page": 31
+    },
+    {
+      "name": "Inquiries about deposition preparation",
+      "depth": 5,
+      "page": 33
+    },
+    {
+      "name": "Pleadings, discovery responses, affidavits",
+      "depth": 5,
+      "page": 36
+    },
+    {
+      "name": "Who, what, where, when, why and how",
+      "depth": 5,
+      "page": 36
+    },
+    {
+      "name": "The good, the bad, and sometimes even the ugly",
+      "depth": 5,
+      "page": 40
+    },
+    {
+      "name": "Sources of proof",
+      "depth": 5,
+      "page": 41
+    },
+    {
+      "name": "Sources of answers",
+      "depth": 5,
+      "page": 41
+    },
+    {
+      "name": "Feelings and attitudes",
+      "depth": 5,
+      "page": 41
+    },
+    {
+      "name": "Hearsay, speculation and opinions",
+      "depth": 5,
+      "page": 42
+    },
+    {
+      "name": "Exhaustion/closure questions",
+      "depth": 5,
+      "page": 44
+    },
+    {
+      "name": "Organization of Questions",
+      "depth": 4,
+      "page": 45
+    },
+    {
+      "name": "Logical/chronological",
+      "depth": 5,
+      "page": 45
+    },
+    {
+      "name": "Unpredictable",
+      "depth": 5,
+      "page": 46
+    },
+    {
+      "name": "Probing for Details/Listening to the Deponent",
+      "depth": 4,
+      "page": 47
+    },
+    {
+      "name": "Pace of Questioning",
+      "depth": 4,
+      "page": 48
+    },
+    {
+      "name": "Leading Questions",
+      "depth": 4,
+      "page": 50
+    },
+    {
+      "name": "Prefatory Phrases",
+      "depth": 4,
+      "page": 50
+    },
+    {
+      "name": "Summarizing Testimony",
+      "depth": 4,
+      "page": 50
+    },
+    {
+      "name": "Reacting to the Witness",
+      "depth": 4,
+      "page": 51
+    },
+    {
+      "name": "Challenging/Impeaching the Witness",
+      "depth": 4,
+      "page": 52
+    },
+    {
+      "name": "Rephrasing Questions",
+      "depth": 4,
+      "page": 53
+    },
+    {
+      "name": "Handling Exhibits",
+      "depth": 3,
+      "page": 54
+    },
+    {
+      "name": "Demonstrations, Reenactments, and Diagrams",
+      "depth": 3,
+      "page": 56
+    },
+    {
+      "name": "Dealing with Confidential Material",
+      "depth": 3,
+      "page": 59
+    },
+    {
+      "name": "Taking Notes During the Deposition",
+      "depth": 3,
+      "page": 60
+    },
+    {
+      "name": "Concluding Procedures",
+      "depth": 3,
+      "page": 61
+    },
+    {
+      "name": "CHAPTER 3 Preparing the Deponent",
+      "depth": 1,
+      "page": 63
+    },
+    {
+      "name": "Review the Case",
+      "depth": 2,
+      "page": 66
+    },
+    {
+      "name": "Review Applicable Claims and Defenses",
+      "depth": 3,
+      "page": 67
+    },
+    {
+      "name": "Review Theme of Case and Role of Deponent",
+      "depth": 3,
+      "page": 67
+    },
+    {
+      "name": "Review the Facts",
+      "depth": 3,
+      "page": 68
+    },
+    {
+      "name": "Review Discovery Responses and Other Testimony",
+      "depth": 3,
+      "page": 68
+    },
+    {
+      "name": "Review Statements, Affidavits, Photos, etc",
+      "depth": 3,
+      "page": 68
+    },
+    {
+      "name": "Review Key Documents",
+      "depth": 2,
+      "page": 69
+    },
+    {
+      "name": "Explain Deposition Logistics and Procedures",
+      "depth": 2,
+      "page": 70
+    },
+    {
+      "name": "Definition and Uses of Depositions",
+      "depth": 3,
+      "page": 70
+    },
+    {
+      "name": "Prior Depositions",
+      "depth": 3,
+      "page": 71
+    },
+    {
+      "name": "Dress",
+      "depth": 3,
+      "page": 71
+    },
+    {
+      "name": "Location",
+      "depth": 3,
+      "page": 71
+    },
+    {
+      "name": "Persons Present",
+      "depth": 3,
+      "page": 72
+    },
+    {
+      "name": "Oath",
+      "depth": 3,
+      "page": 73
+    },
+    {
+      "name": "Deposition Record and Recording",
+      "depth": 3,
+      "page": 73
+    },
+    {
+      "name": "Breaks",
+      "depth": 3,
+      "page": 74
+    },
+    {
+      "name": "What to Bring to the Deposition",
+      "depth": 3,
+      "page": 74
+    },
+    {
+      "name": "Length of the Deposition",
+      "depth": 3,
+      "page": 75
+    },
+    {
+      "name": "Preliminary Instructions",
+      "depth": 3,
+      "page": 75
+    },
+    {
+      "name": "Right to Read and Sign the Deposition",
+      "depth": 3,
+      "page": 76
+    },
+    {
+      "name": "Tips Regarding Answering Questions",
+      "depth": 2,
+      "page": 76
+    },
+    {
+      "name": "Tell the Truth",
+      "depth": 3,
+      "page": 77
+    },
+    {
+      "name": "Listen to the Entire Question",
+      "depth": 3,
+      "page": 78
+    },
+    {
+      "name": "Make Sure You Understand the Question and Take a Moment Before Answering",
+      "depth": 3,
+      "page": 79
+    },
+    {
+      "name": "Do Not Volunteer Information-Keep Answers Brief",
+      "depth": 3,
+      "page": 80
+    },
+    {
+      "name": "Do Not Speculate",
+      "depth": 3,
+      "page": 81
+    },
+    {
+      "name": "Do Not Answer \"Yes\" or \"No\" If You Cannot Answer the Question that Way",
+      "depth": 3,
+      "page": 83
+    },
+    {
+      "name": "Be Forceful on Important Points but Do Not Exaggerate",
+      "depth": 3,
+      "page": 83
+    },
+    {
+      "name": "Be Wary of Agreeing to Counsel's Summary of Your Testimony",
+      "depth": 3,
+      "page": 84
+    },
+    {
+      "name": "Do Not Get Angry or Argue With Opposing Counsel",
+      "depth": 3,
+      "page": 84
+    },
+    {
+      "name": "Avoid Humorous and Sarcastic Remarks",
+      "depth": 3,
+      "page": 85
+    },
+    {
+      "name": "Feel Free to Tell Attorney You Have Not Completed Your Answer",
+      "depth": 3,
+      "page": 85
+    },
+    {
+      "name": "Do Not Testify Regarding Privileged Communications",
+      "depth": 3,
+      "page": 86
+    },
+    {
+      "name": "Feel Free to Refer to Documents; Read Documents if Necessary Before Testifying About Them",
+      "depth": 3,
+      "page": 86
+    },
+    {
+      "name": "Be Prepared for Closure Questions – Employ the \"At This Time\" Tag-On",
+      "depth": 3,
+      "page": 86
+    },
+    {
+      "name": "Do Not Agree to Produce Documents",
+      "depth": 3,
+      "page": 87
+    },
+    {
+      "name": "Correct Mistakes at the Deposition",
+      "depth": 3,
+      "page": 87
+    },
+    {
+      "name": "Discuss Your Role and the Limitations on What You May Do",
+      "depth": 2,
+      "page": 87
+    },
+    {
+      "name": "Objections",
+      "depth": 3,
+      "page": 88
+    },
+    {
+      "name": "Instructions Not To Answer",
+      "depth": 3,
+      "page": 88
+    },
+    {
+      "name": "Conferences With You",
+      "depth": 3,
+      "page": 89
+    },
+    {
+      "name": "Your Questions",
+      "depth": 3,
+      "page": 90
+    },
+    {
+      "name": "Motion for a Protective Order",
+      "depth": 3,
+      "page": 90
+    },
+    {
+      "name": "Discuss Opposing Counsel",
+      "depth": 2,
+      "page": 91
+    },
+    {
+      "name": "Role",
+      "depth": 3,
+      "page": 91
+    },
+    {
+      "name": "Style",
+      "depth": 3,
+      "page": 91
+    },
+    {
+      "name": "Discuss the Witness's Fears",
+      "depth": 2,
+      "page": 91
+    },
+    {
+      "name": "Practice",
+      "depth": 2,
+      "page": 92
+    },
+    {
+      "name": "Do a Mock Examination",
+      "depth": 3,
+      "page": 92
+    },
+    {
+      "name": "Consider Videotaping a Mock Deposition",
+      "depth": 3,
+      "page": 93
+    },
+    {
+      "name": "Get Your Deponents To Do Their Own Preparation",
+      "depth": 3,
+      "page": 93
+    },
+    {
+      "name": "Ethical Issues Regarding Preparation of Deponents",
+      "depth": 2,
+      "page": 94
+    },
+    {
+      "name": "Can You Disclose the Law Before Deponents Give Their Narrative Account of the Facts?",
+      "depth": 3,
+      "page": 94
+    },
+    {
+      "name": "Can You Challenge a Deponent's Recollection of Unfavorable Facts?",
+      "depth": 3,
+      "page": 94
+    },
+    {
+      "name": "Can You Refresh a Deponent's Recollection of the Facts?",
+      "depth": 3,
+      "page": 95
+    },
+    {
+      "name": "Can You Instruct a Deponent Not to Discuss Some Matter?",
+      "depth": 3,
+      "page": 96
+    },
+    {
+      "name": "Can You Suggest That a Deponent Use Different Words While Testifying?",
+      "depth": 3,
+      "page": 96
+    },
+    {
+      "name": "Can You Signal a Witness?",
+      "depth": 3,
+      "page": 97
+    },
+    {
+      "name": "What If You Discover Evidence of Your Client's Fraud or Illegal Conduct While Preparing a Deponent?",
+      "depth": 3,
+      "page": 97
+    },
+    {
+      "name": "CHAPTER 4 Representing the Deponent",
+      "depth": 1,
+      "page": 99
+    },
+    {
+      "name": "Preventing Depositions",
+      "depth": 2,
+      "page": 99
+    },
+    {
+      "name": "Attorneys and Investigators",
+      "depth": 3,
+      "page": 100
+    },
+    {
+      "name": "High Level Government/Corporate Officials",
+      "depth": 3,
+      "page": 101
+    },
+    {
+      "name": "Minors and Impaired Deponents",
+      "depth": 3,
+      "page": 103
+    },
+    {
+      "name": "Witnesses With Privileged Information",
+      "depth": 3,
+      "page": 103
+    },
+    {
+      "name": "Experts",
+      "depth": 3,
+      "page": 103
+    },
+    {
+      "name": "Protective Orders Regarding the Conduct of Depositions",
+      "depth": 2,
+      "page": 104
+    },
+    {
+      "name": "Defending the Deposition",
+      "depth": 2,
+      "page": 105
+    },
+    {
+      "name": "Protecting the Deponent and the Record Generally",
+      "depth": 3,
+      "page": 105
+    },
+    {
+      "name": "Objections and Instructions Not to Answer",
+      "depth": 3,
+      "page": 109
+    },
+    {
+      "name": "The Rules",
+      "depth": 4,
+      "page": 109
+    },
+    {
+      "name": "Tactical Considerations",
+      "depth": 4,
+      "page": 113
+    },
+    {
+      "name": "Asserting Fifth Amendment Rights",
+      "depth": 3,
+      "page": 115
+    },
+    {
+      "name": "Seeking Court Intervention",
+      "depth": 3,
+      "page": 116
+    },
+    {
+      "name": "Can You Get Help?",
+      "depth": 4,
+      "page": 116
+    },
+    {
+      "name": "From Which Court Do You Get Help?",
+      "depth": 4,
+      "page": 117
+    },
+    {
+      "name": "Questioning the Deponent",
+      "depth": 3,
+      "page": 118
+    },
+    {
+      "name": "CHAPTER 5 Problem Witnesses and Problem Attorneys",
+      "depth": 1,
+      "page": 121
+    },
+    {
+      "name": "Problem Witnesses",
+      "depth": 2,
+      "page": 121
+    },
+    {
+      "name": "The Forgetful Witness",
+      "depth": 3,
+      "page": 122
+    },
+    {
+      "name": "The Evasive Witness",
+      "depth": 3,
+      "page": 126
+    },
+    {
+      "name": "The Belligerent Witness",
+      "depth": 3,
+      "page": 128
+    },
+    {
+      "name": "The Rambling Witness",
+      "depth": 3,
+      "page": 130
+    },
+    {
+      "name": "The Impaired or Vulnerable Witness",
+      "depth": 3,
+      "page": 132
+    },
+    {
+      "name": "The Lying Witness",
+      "depth": 3,
+      "page": 133
+    },
+    {
+      "name": "The Wacko Witness",
+      "depth": 3,
+      "page": 134
+    },
+    {
+      "name": "Problem Attorneys",
+      "depth": 2,
+      "page": 135
+    },
+    {
+      "name": "The Coach",
+      "depth": 3,
+      "page": 135
+    },
+    {
+      "name": "The Testifier",
+      "depth": 3,
+      "page": 139
+    },
+    {
+      "name": "The Objector",
+      "depth": 3,
+      "page": 140
+    },
+    {
+      "name": "The Intimidator",
+      "depth": 3,
+      "page": 142
+    },
+    {
+      "name": "The Professor",
+      "depth": 3,
+      "page": 149
+    },
+    {
+      "name": "The Repeater (a/k/a Déjà Vu)",
+      "depth": 3,
+      "page": 150
+    },
+    {
+      "name": "The Timekeeper",
+      "depth": 3,
+      "page": 151
+    },
+    {
+      "name": "Judicial Intervention",
+      "depth": 2,
+      "page": 151
+    },
+    {
+      "name": "CHAPTER 6 Expert Depositions",
+      "depth": 1,
+      "page": 155
+    },
+    {
+      "name": "Expert Deposition Rules and Requirements",
+      "depth": 2,
+      "page": 156
+    },
+    {
+      "name": "Right to Depose Experts",
+      "depth": 3,
+      "page": 156
+    },
+    {
+      "name": "Expert Reports",
+      "depth": 3,
+      "page": 157
+    },
+    {
+      "name": "Timing and Sequence of Expert Depositions",
+      "depth": 3,
+      "page": 159
+    },
+    {
+      "name": "Location of Expert Depositions",
+      "depth": 3,
+      "page": 159
+    },
+    {
+      "name": "Costs of Expert Depositions",
+      "depth": 3,
+      "page": 160
+    },
+    {
+      "name": "Recording Expert Depositions",
+      "depth": 3,
+      "page": 161
+    },
+    {
+      "name": "Preparing for the Expert Deposition",
+      "depth": 2,
+      "page": 161
+    },
+    {
+      "name": "Create a \"Book\" on the Expert",
+      "depth": 3,
+      "page": 161
+    },
+    {
+      "name": "Rule 26 Report",
+      "depth": 4,
+      "page": 162
+    },
+    {
+      "name": "Expert's Prior Testimony",
+      "depth": 4,
+      "page": 162
+    },
+    {
+      "name": "Expert's Publications",
+      "depth": 4,
+      "page": 163
+    },
+    {
+      "name": "Media Articles",
+      "depth": 4,
+      "page": 163
+    },
+    {
+      "name": "Internet Information",
+      "depth": 4,
+      "page": 163
+    },
+    {
+      "name": "Licensure Boards/Professional Associations",
+      "depth": 4,
+      "page": 164
+    },
+    {
+      "name": "Consultation with Other Attorneys and Associations",
+      "depth": 4,
+      "page": 164
+    },
+    {
+      "name": "Check Expert's Credentials – Get Current Curriculum Vitae",
+      "depth": 4,
+      "page": 164
+    },
+    {
+      "name": "Use Your Expert and Client to Help You Prepare",
+      "depth": 3,
+      "page": 164
+    },
+    {
+      "name": "Get Expert's File Before the Deposition",
+      "depth": 3,
+      "page": 165
+    },
+    {
+      "name": "Reports/Drafts",
+      "depth": 4,
+      "page": 165
+    },
+    {
+      "name": "Raw Data and Work Papers",
+      "depth": 4,
+      "page": 165
+    },
+    {
+      "name": "Communications with Counsel",
+      "depth": 4,
+      "page": 166
+    },
+    {
+      "name": "Materials/Information Relied Upon",
+      "depth": 4,
+      "page": 167
+    },
+    {
+      "name": "Retainer and Invoices",
+      "depth": 4,
+      "page": 167
+    },
+    {
+      "name": "Prepare Outline of Questions",
+      "depth": 3,
+      "page": 167
+    },
+    {
+      "name": "Taking the Deposition",
+      "depth": 2,
+      "page": 167
+    },
+    {
+      "name": "Inquire About Production Requests",
+      "depth": 3,
+      "page": 168
+    },
+    {
+      "name": "Do Not Try to Destroy the Expert",
+      "depth": 3,
+      "page": 168
+    },
+    {
+      "name": "Consider Having Your Expert Attend the Deposition",
+      "depth": 3,
+      "page": 168
+    },
+    {
+      "name": "Try Not to Educate the Expert About Your Analysis of the Case",
+      "depth": 3,
+      "page": 169
+    },
+    {
+      "name": "Use Frequent Closure Questions",
+      "depth": 3,
+      "page": 169
+    },
+    {
+      "name": "More Tips in Model Expert Deposition Outline",
+      "depth": 3,
+      "page": 169
+    },
+    {
+      "name": "Follow-up to Expert's Deposition",
+      "depth": 3,
+      "page": 170
+    },
+    {
+      "name": "Get Supplemental Reports",
+      "depth": 4,
+      "page": 170
+    },
+    {
+      "name": "Take Another Deposition of the Expert",
+      "depth": 4,
+      "page": 170
+    },
+    {
+      "name": "Consider Getting a Different or Additional Expert",
+      "depth": 4,
+      "page": 170
+    },
+    {
+      "name": "Give Transcript to Your Expert to Evaluate",
+      "depth": 4,
+      "page": 170
+    },
+    {
+      "name": "Preparing an Expert to be Deposed",
+      "depth": 2,
+      "page": 171
+    },
+    {
+      "name": "Do Not Assume Expert Knows How to Testify",
+      "depth": 3,
+      "page": 171
+    },
+    {
+      "name": "Review Theories of the Case",
+      "depth": 3,
+      "page": 172
+    },
+    {
+      "name": "Discuss Testimony of Other Experts",
+      "depth": 3,
+      "page": 172
+    },
+    {
+      "name": "Remember That Your Preparation May Be Discoverable",
+      "depth": 3,
+      "page": 172
+    },
+    {
+      "name": "Model Expert Deposition Outline",
+      "depth": 2,
+      "page": 172
+    },
+    {
+      "name": "CHAPTER 7 Uses of Depositions",
+      "depth": 1,
+      "page": 185
+    },
+    {
+      "name": "Use With Motions",
+      "depth": 2,
+      "page": 185
+    },
+    {
+      "name": "Use at Trial",
+      "depth": 2,
+      "page": 187
+    },
+    {
+      "name": "Deposition Testimony as Substantive Evidence",
+      "depth": 3,
+      "page": 187
+    },
+    {
+      "name": "Witness Unavailable",
+      "depth": 4,
+      "page": 188
+    },
+    {
+      "name": "Admissions of Party Opponent",
+      "depth": 4,
+      "page": 193
+    },
+    {
+      "name": "Prior Inconsistent Statement",
+      "depth": 4,
+      "page": 193
+    },
+    {
+      "name": "Deposition for Impeachment",
+      "depth": 3,
+      "page": 193
+    },
+    {
+      "name": "Deposition to Refresh Recollection and as Past Recollection Recorded",
+      "depth": 3,
+      "page": 195
+    },
+    {
+      "name": "Use in Settlement Negotiations",
+      "depth": 2,
+      "page": 196
+    },
+    {
+      "name": "CHAPTER 8 Miscellaneous Deposition Issues",
+      "depth": 1,
+      "page": 199
+    },
+    {
+      "name": "Compensation of Fact Witnesses",
+      "depth": 2,
+      "page": 199
+    },
+    {
+      "name": "Depositions on Written Questions",
+      "depth": 2,
+      "page": 202
+    },
+    {
+      "name": "Telephone and Videoconference Depositions",
+      "depth": 2,
+      "page": 204
+    },
+    {
+      "name": "Videotaped Depositions",
+      "depth": 2,
+      "page": 206
+    },
+    {
+      "name": "Rules/Requirements",
+      "depth": 3,
+      "page": 206
+    },
+    {
+      "name": "Advantages and Disadvantages",
+      "depth": 3,
+      "page": 207
+    },
+    {
+      "name": "International Depositions",
+      "depth": 2,
+      "page": 209
+    },
+    {
+      "name": "Internet Depositions",
+      "depth": 2,
+      "page": 210
+    },
+    {
+      "name": "Depositions of Electronic Data Custodians",
+      "depth": 2,
+      "page": 212
+    },
+    {
+      "name": "Get Help From Your Own E-Data Expert",
+      "depth": 3,
+      "page": 212
+    },
+    {
+      "name": "E-Data Custodian's Background and E-Data Policies",
+      "depth": 3,
+      "page": 213
+    },
+    {
+      "name": "Locations of E-Data",
+      "depth": 3,
+      "page": 213
+    },
+    {
+      "name": "E-Data Hardware and Software, Access Types, Formats, Storage Media, and File-Naming",
+      "depth": 3,
+      "page": 214
+    },
+    {
+      "name": "E-Data Preservation/Retention",
+      "depth": 3,
+      "page": 215
+    },
+    {
+      "name": "Access to E-Data",
+      "depth": 3,
+      "page": 216
+    },
+    {
+      "name": "How E-Data is Used",
+      "depth": 3,
+      "page": 216
+    },
+    {
+      "name": "CHAPTER 9 Deposition Rules and Procedures",
+      "depth": 1,
+      "page": 219
+    },
+    {
+      "name": "Scope of Depositions",
+      "depth": 2,
+      "page": 219
+    },
+    {
+      "name": "Number of Depositions",
+      "depth": 2,
+      "page": 221
+    },
+    {
+      "name": "Notice Requirement",
+      "depth": 2,
+      "page": 223
+    },
+    {
+      "name": "Timing and Order of Depositions",
+      "depth": 2,
+      "page": 225
+    },
+    {
+      "name": "Priority/Sequence",
+      "depth": 3,
+      "page": 225
+    },
+    {
+      "name": "Multiple Tracking",
+      "depth": 3,
+      "page": 226
+    },
+    {
+      "name": "Rule 27 Pre-Action Depositions",
+      "depth": 3,
+      "page": 226
+    },
+    {
+      "name": "Tactical Considerations",
+      "depth": 3,
+      "page": 227
+    },
+    {
+      "name": "Location of Depositions",
+      "depth": 2,
+      "page": 228
+    },
+    {
+      "name": "Location of Particular Types of Depositions",
+      "depth": 3,
+      "page": 229
+    },
+    {
+      "name": "Plaintiffs",
+      "depth": 4,
+      "page": 229
+    },
+    {
+      "name": "Defendants",
+      "depth": 4,
+      "page": 229
+    },
+    {
+      "name": "Corporations",
+      "depth": 4,
+      "page": 230
+    },
+    {
+      "name": "Non-Parties",
+      "depth": 4,
+      "page": 230
+    },
+    {
+      "name": "Experts",
+      "depth": 4,
+      "page": 230
+    },
+    {
+      "name": "Selecting the Location",
+      "depth": 3,
+      "page": 230
+    },
+    {
+      "name": "Deposition Subpoenas",
+      "depth": 2,
+      "page": 232
+    },
+    {
+      "name": "Designated Deponents",
+      "depth": 2,
+      "page": 234
+    },
+    {
+      "name": "Length of Depositions",
+      "depth": 2,
+      "page": 237
+    },
+    {
+      "name": "Persons Present at Depositions",
+      "depth": 2,
+      "page": 238
+    },
+    {
+      "name": "Parties",
+      "depth": 3,
+      "page": 238
+    },
+    {
+      "name": "Witnesses",
+      "depth": 3,
+      "page": 238
+    },
+    {
+      "name": "Experts",
+      "depth": 3,
+      "page": 239
+    },
+    {
+      "name": "Media and/or Public",
+      "depth": 3,
+      "page": 239
+    },
+    {
+      "name": "Tactical Considerations",
+      "depth": 3,
+      "page": 240
+    },
+    {
+      "name": "Recording the Deposition",
+      "depth": 2,
+      "page": 241
+    },
+    {
+      "name": "Hologram Depositions",
+      "depth": 2,
+      "page": 243
+    },
+    {
+      "name": "APPENDIX A",
+      "depth": 1,
+      "page": 245
+    },
+    {
+      "name": "APPENDIX B",
+      "depth": 1,
+      "page": 249
+    },
+    {
+      "name": "APPENDIX C",
+      "depth": 1,
+      "page": 321
+    },
+    {
+      "name": "APPENDIX D",
+      "depth": 1,
+      "page": 389
+    }
+  ],
+  "processedAt": "2025-09-23T12:46:26.455Z"
+}

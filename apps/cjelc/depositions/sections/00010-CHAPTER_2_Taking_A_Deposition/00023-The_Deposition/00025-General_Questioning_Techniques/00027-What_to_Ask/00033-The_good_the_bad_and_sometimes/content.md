@@ -1,0 +1,9 @@
+
+Should you limit yourself to questions that are likely to elicit only helpful answers? Or should you ask questions that may elicit good or bad information?
+
+The answer depends on the purpose for your deposition. Sometimes you are deposing a friendly witness to preserve favorable testimony for use at summary judgment or trial, when you know that the witness likely will be unavailable later. In that event, you are concerned with eliciting favorable facts. If the witness also has bad things to say, let the other side ask the questions to get those bad facts in cross-examination, unless you are engaged in inoculating the judge and jury against the damaging information by bringing some of it out yourself with the best possible spin.
+
+More often, you are deposing a witness who is likely to testify for the adversary. Your main purpose in the deposition is to avoid unpleasant later surprises. You want to know everything the witness is likely to say, so that you can defuse the testimony, either on the spot through immediate impeachment or cross-examination, or later through other witnesses and evidence. In this type of deposition, do not refrain from asking a question solely because you believe you will not like the answer. Just make sure to ask abundant "who, what, where, when, why, and how" questions, to test credibility and to set up possible impeachment on the spot or later.
+
+
+^15 Even if you are getting "I don't know answers," do not abort the "who, what, where, when, why, and how" sequence. The sequence might spark a memory. If not, you have effectively disqualified a witness from testifying later about the same subject.

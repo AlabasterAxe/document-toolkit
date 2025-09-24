@@ -1,0 +1,2 @@
+
+If the deponent is a party to the lawsuit, he or she has authorized pleadings and discovery responses and may have signed them. Even a deponent who is not a party may have participated in preparing the company's documents, or may have signed an affidavit or statement. It is appropriate to ask a deponent about information presented in documents in which the deponent has participated. "What did you mean by . . . ?" is a very useful question.

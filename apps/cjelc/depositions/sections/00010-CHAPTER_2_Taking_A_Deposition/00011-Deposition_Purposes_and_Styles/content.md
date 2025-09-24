@@ -1,0 +1,2 @@
+
+The purpose of your deposition will affect your style and approach. This is one of many reasons why you always need to determine in advance why you are taking any given deposition. Following are some of the common reasons for taking a deposition, along with a brief explanation regarding how your approach should vary in order to best meet your needs in any given situation. You also should be mindful that depositions may serve multiple purposes and that you may have to vary your style at different points in the deposition to best meet your goals.

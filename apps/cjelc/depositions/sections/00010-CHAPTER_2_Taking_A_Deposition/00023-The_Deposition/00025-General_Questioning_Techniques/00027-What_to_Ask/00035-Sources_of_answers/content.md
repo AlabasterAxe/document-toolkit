@@ -1,0 +1,2 @@
+
+Another typical area of inquiry concerns the sources of proof for the deponent's answers (e.g., eye witness observation, statements of others, documents, presumptions based on habit). What are those sources of proof? What is the extent of the witness's reliance on them? Why does the witness rely on them? In what way does the witness rely on them? These questions all relate to the foundation and credibility of the deponent's version of the facts. Who is really testifying - the deponent or some other source?
