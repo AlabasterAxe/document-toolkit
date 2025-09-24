@@ -64,3 +64,5 @@ package-lock.json
 yarn.lock
 
 dist/
+
+apps/**/jobs/

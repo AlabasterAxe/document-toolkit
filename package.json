@@ -12,7 +12,8 @@
     "test": "pnpm -r test",
     "dev": "pnpm -r dev",
     "doc:build": "tsx scripts/build-document.ts",
-    "doc:preview": "tsx scripts/dev-server.ts"
+    "doc:preview": "tsx scripts/dev-server.ts",
+    "ocr": "deno run --allow-all --env-file=.env packages/content-extractor/src/ocr/ocr.ts"
   },
   "devDependencies": {
     "@types/react": "^19.1.13",
