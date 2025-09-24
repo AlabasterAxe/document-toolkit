@@ -1,0 +1,48 @@
+
+Does the decision in Smith v. Van Gorkom, and the potential liability for directors which it portends, reflect the proper role of the fiduciary duty of care? Consider the views of three noted jurists from the opinion and notes that follow.
+
+## Joy v. North <br> United States Court of Appeals for the Second Circuit, 1982 692 F.2d 880
+
+Winter, Judge . . .
+
+## A. The Liability of Corporate Directors and Officers and the Business Judgment Rule
+
+While it is often stated that corporate directors and officers will be liable for negligence in carrying out their corporate duties, all seem agreed that such a statement is misleading. Whereas an automobile driver who makes a mistake in judgment as to speed or distance injuring a pedestrian will likely be called upon to respond in damages, a corporate officer who makes a mistake in judgment as to economic conditions, consumer tastes or production line efficiency will rarely, if ever, be found liable for damages suffered by the corporation. Whatever the terminology, the fact is that liability is rarely imposed upon corporate directors or officers simply for bad judgment, and this reluctance to impose liability for unsuccessful business decisions has been doctrinally labelled the business judgment rule. Although the rule has suffered under academic criticism, see, e.g., Cary, Standards of Conduct Under Common Law, Present Day Statutes and the Model Act, 27 Bus. Lawyer 61 (1972), it is not without rational basis.
+First, shareholders to a very real degree voluntarily undertake the risk of bad business judgment. Investors need not buy stock, for investment markets offer an array of opportunities less vulnerable to mistakes in judgment by corporate officers. Nor need investors buy stock in particular corporations. In the exercise of what is genuinely a free choice, the quality of a firm's management is often decisive and information is available from professional advisors. Since shareholders can and do select among investments partly on the basis of management, the business judgment rule merely recognizes a certain voluntariness in undertaking the risk of bad business decisions.
+
+Second, courts recognize that after-the-fact litigation is a most imperfect device to evaluate corporate business decisions. The circumstances surrounding a corporate decision are not easily reconstructed in a courtroom years later, since business imperatives often call for quick decisions, inevitably based on less than perfect information. The entrepreneur's function is to encounter risks and to confront uncertainty, and a reasoned decision at the time made may seem a wild hunch viewed years later against a background of perfect knowledge.
+
+Third, because potential profit often corresponds to the potential risk, it is very much in the interest of shareholders that the law not create incentives for overly cautious corporate decisions. Some opportunities offer great profits at the risk of very substantial losses, while the alternatives offer less risk of loss but also less potential profit. Shareholders can reduce the volatility ^5 of risk by diversifying their holdings. In the case of the diversified shareholder, the seemingly more risky alternatives may well be the best choice since great losses in some stocks will over time be offset by even greater gains in others.
+
+Consider the choice between two investments in an example adapted from Klein, Business Organization and Finance 147-49 (1980):
+
+| Investment A | | | Investment B | | |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| Estimated <br> Probability <br> of Outcome | Outcome <br> Profit or <br> Loss | Value | Estimated <br> Probability <br> of Outcome | Outcome <br> Profit or <br> Loss | Value |
+| .4 | +15 | 6.0 | .4 | +6 | 2.4 |
+| .4 | +1 | .4 | .4 | +2 | .8 |
+| .2 | -13 | -2.6 | .2 | +1 | .2 |
+| 1.0 | | 3.8 | 1.0 | | 3.4 |
+
+Although A is clearly "worth" more than B , it is riskier because it is more volatile. Diversification lessens the volatility by allowing investors to invest in 20 or 200 A's which will tend to guarantee a total result near the value. Shareholders are thus better off with the various firms selecting A over B, although after the fact they will complain in each case of the 2.6 loss. If the courts did not abide by the business judgment rule, they might well penalize the choice of A in each such case and thereby unknowingly injure shareholders generally by creating incentives for management always to choose B. For purposes of this opinion, "volatility" is "the degree of dispersion or variation of possible outcomes." Klein, Business Organization and Finance 147 (1980). . . .
+. . . Given mutual funds and similar forms of diversified investment, courts need not bend over backwards to give special protection to shareholders who refuse to reduce the volatility of risk by not diversifying. A rule which penalizes the choice of seemingly riskier alternatives thus may not be in the interest of shareholders generally.
+
+Whatever its merit, however, the business judgment rule extends only as far as the reasons which justify its existence. Thus, it does not apply in cases, e.g., in which the corporate decision lacks a business purpose, is tainted by a conflict of interest, is so egregious as to amount to a no-win decision, Litwin v. Allen, 25 N.Y.S.2d 667 (N.Y. Co. Sup. Ct. 1940), or results from an obvious and prolonged failure to exercise oversight or supervision. . . .
+
+# NOTES AND QUESTIONS 
+
+1. Former Delaware Chancellor Allen authored the following policy argument for limiting the reach of the duty of care:
+
+Corporate directors of public companies typically have a very small proportionate ownership interest in their corporations and little or no incentive compensation. Thus, they enjoy (as residual owners) only a very small proportion of any "upside" gains earned by the corporation on risky investment projects. If, however, corporate directors were to be found liable for a corporate loss from a risky project on the ground that the investment was too risky (foolishly risky! stupidly risky! egregiously risky!-you supply the adverb), their liability would be joint and several for the whole loss (with I suppose a right of contribution). Given the scale of operation of modern public corporations, this stupefying disjunction between risk and reward for corporate directors threatens undesirable effects. Given this disjunction, only a very small probability of director liability based on "negligence", "inattention", "waste", etc. could induce a board to avoid authorizing risky investment projects to any extent! Obviously, it is in the shareholders' economic interest to offer sufficient protection to directors from liability for negligence, etc., to allow directors to conclude that, as a practical matter, there is no risk that, if they act in good faith and meet minimalist proceduralist standards of attention, they can face liability as a result of a business loss.
+
+Gagliardi v. Trifoods Int'l Inc., 683 A.2d 1049, 1052 (Del. Ch. 1996).
+
+2. Chancellor Chandler likewise advanced policy reasons supporting a limited role for the fiduciary duty of care:
+[It] is, I think, worth noting what the role of this Court must be in evaluating decisionmakers' performance with respect to decisions gone awry, spectacularly or otherwise. It is easy, of course, to fault a decision that ends in a failure, once hindsight makes the result of that decision plain to see. But the essence of business is risk - the application of informed belief to contingencies whose outcomes can sometimes be predicted, but never known. The decisionmakers entrusted by shareholders must act out of loyalty to those shareholders. They must in good faith act to make informed decisions on behalf of the shareholders, untainted by self-interest. Where they fail to do so, this Court stands ready to remedy breaches of fiduciary duty. Even where decision-makers act as faithful servants, however, their ability and the wisdom of their judgments will vary. The redress for failures that arise from faithful management must come from the markets, through the action of shareholders and the free flow of capital, and not from this Court. Should the Court apportion liability based on the ultimate outcome of decisions taken in good faith by faithful directors or officers, those decisionmakers would necessarily take decisions that minimize risk, not maximize value. The entire advantage of the risk-taking, innovative, wealth-creating engine that is the Delaware corporation would cease to exist, with disastrous results for shareholders and society alike. That is why, under our corporate law, corporate decision makers are held strictly to their fiduciary duties, but within the boundaries of those duties are free to act as their judgment and abilities dictate, free of post hoc penalties from a reviewing court using perfect hindsight.
+
+In re Walt Disney Co. Derivative Litig., 907 A.2d 693, 698 (Del. Ch. 2005).
+3. What result in Van Gorkom if decided by a hypothetical Delaware Supreme Court that has as three of its five members Judge Winter (Joy v. North) and former Delaware Chancellors Allen and Chandler?
+
+
+[^0]: 5. For purposes of this opinion, "volatility" is "the degree of dispersion or variation of possible outcomes." Klein, Business Organization and Finance 147 (1980).
+* [Editors' note: This paragraph appears as footnote 6 in Joy v. North, but has been elevated to the text, above, for clarity and to reflect its importance.]

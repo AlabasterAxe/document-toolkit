@@ -1,0 +1,13 @@
+
+One response to the problem of opportunism is to negotiate and execute a contract that specifies the rights and duties of the parties, thereby creating an explicit team. The appropriate contractual strategy depends on the team's expected duration and need to adapt.
+
+In discrete contracting, the parties have no preexisting obligations to each other. As they approach a contemplated venture, they negotiate a contract that anticipates and provides a rule governing all contingencies. Nothing is left to be worked out in the future. For example, Sharon and Jake might enter into a long-term contract specifying both their initial obligations and how, if at all, such obligations will be affected by future events. Jake might be required to produce a certain quantity and quality of beer, which Sharon is required to purchase at a set price. However, the contract might specify, in detail, what objective factors would entitle either party to a price or quantity change.
+
+Discrete contracting is most likely to be successful when the team's expected duration is short and the number of exchanges between team members will be few. As the duration and frequency of exchange increase, bounded rationality makes it increasingly more likely that the parties will specify an inappropriate rule for a particular contingency, or that the parties will fail to identify and specify a result for a relevant contingency.
+
+Relational contracting is a response to the defects of discrete contracting. In relational contracting, parties do not attempt to provide an answer to all contingencies at the time the relation commences. Instead, they attempt to build a governance structure that will allow them to solve problems when, and if, they arise. The goal of relational contracting is to reinforce the relation itself. The hope is that cooperation and harmony will become ingrained norms of the relationship, and that the parties will continue to deal with each other in good faith even when facing difficult adjustment problems.
+
+Contracts that contain relation-reinforcing provisions will not eliminate the threat of opportunism. By giving parties express permission to seek renegotiation, the risk of opportunistic refusal to renegotiate may be less than in a discrete contract, but the threat of opportunistic requests for readjustment may be greater. Moreover, because of bounded rationality, courts may find that a contract is discrete when the parties intended it to be relational, and vice versa.
+
+
+[^0]: 12. Oliver E. Williamson, The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting 47 (1985).

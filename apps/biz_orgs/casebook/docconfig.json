@@ -1,0 +1,973 @@
+{
+  "type": "document-ocr",
+  "bookName": "depositions",
+  "version": "1.0",
+  "config": {
+    "pageOffset": 21,
+    "ocrProvider": "gemini",
+    "sectionFormat": "markdown"
+  },
+  "toc": [
+    {
+      "name": "Economic and Legal Aspects of the Firm",
+      "depth": 1,
+      "page": 1
+    },
+    {
+      "name": "Some Basic Concepts and Terminology",
+      "depth": 2,
+      "page": 1
+    },
+    {
+      "name": "The Classical Firm",
+      "depth": 3,
+      "page": 1
+    },
+    {
+      "name": "Introductory Note",
+      "depth": 4,
+      "page": 1
+    },
+    {
+      "name": "The Entrepreneur",
+      "depth": 4,
+      "page": 1
+    },
+    {
+      "name": "The Coasean Firm: Differentiating the Market and the Firm",
+      "depth": 4,
+      "page": 2
+    },
+    {
+      "name": "The Business Association",
+      "depth": 3,
+      "page": 3
+    },
+    {
+      "name": "The Modern Corporation and the Berle-Means Critique",
+      "depth": 3,
+      "page": 4
+    },
+    {
+      "name": "The Return of Free Market Ideology: The Firm as a Nexus of Contracts",
+      "depth": 3,
+      "page": 6
+    },
+    {
+      "name": "Separation of Ownership and Control and Agency Costs",
+      "depth": 3,
+      "page": 7
+    },
+    {
+      "name": "The New Millennium: Corporate Scandal, Financial Crises, Corporate Governance, and Government Regulation",
+      "depth": 3,
+      "page": 8
+    },
+    {
+      "name": "Organizing the Firm: Selecting a Value-Maximizing Governance Structure",
+      "depth": 2,
+      "page": 9
+    },
+    {
+      "name": "Business Planning: The Role of the Corporate Lawyer in Organizing a Firm",
+      "depth": 3,
+      "page": 9
+    },
+    {
+      "name": "The Goal of Informed Rational Choice Between Competing Investment Options",
+      "depth": 3,
+      "page": 9
+    },
+    {
+      "name": "Comparative Search for Best Investment",
+      "depth": 4,
+      "page": 9
+    },
+    {
+      "name": "Risk and Return",
+      "depth": 4,
+      "page": 11
+    },
+    {
+      "name": "Transaction Costs and Choice of Organizational Form",
+      "depth": 3,
+      "page": 13
+    },
+    {
+      "name": "Introduction",
+      "depth": 4,
+      "page": 13
+    },
+    {
+      "name": "Transaction Cost Factors",
+      "depth": 4,
+      "page": 13
+    },
+    {
+      "name": "Discrete and Relational Contracting",
+      "depth": 4,
+      "page": 14
+    },
+    {
+      "name": "Deciding to Organize as a Firm",
+      "depth": 4,
+      "page": 15
+    },
+    {
+      "name": "State-Provided Governance Structures",
+      "depth": 3,
+      "page": 16
+    },
+    {
+      "name": "Entity and Employment Law as Standard Form Contracts",
+      "depth": 4,
+      "page": 16
+    },
+    {
+      "name": "Default Versus Immutable Rules",
+      "depth": 4,
+      "page": 16
+    },
+    {
+      "name": "Tailored, Majoritarian, and Penalty Default Rules",
+      "depth": 4,
+      "page": 17
+    },
+    {
+      "name": "Nonjudicial Mechanisms That Supplement and Reinforce Private Ordering",
+      "depth": 3,
+      "page": 18
+    },
+    {
+      "name": "The Governance Role of Markets",
+      "depth": 4,
+      "page": 18
+    },
+    {
+      "name": "The Role of Trust",
+      "depth": 4,
+      "page": 19
+    },
+    {
+      "name": "The Role of Norms",
+      "depth": 4,
+      "page": 19
+    },
+    {
+      "name": "The Firm and the Law of Agency",
+      "depth": 2,
+      "page": 20
+    },
+    {
+      "name": "Introduction",
+      "depth": 3,
+      "page": 20
+    },
+    {
+      "name": "Creating the Relationship of Principal and Agent",
+      "depth": 3,
+      "page": 22
+    },
+    {
+      "name": "Employee or Independent Contractor",
+      "depth": 3,
+      "page": 28
+    },
+    {
+      "name": "Apparent Authority and Related Concepts",
+      "depth": 3,
+      "page": 42
+    },
+    {
+      "name": "Respondeat Superior; Vicarious Liability",
+      "depth": 3,
+      "page": 49
+    },
+    {
+      "name": "Fiduciary Duty as Constraint on Agent's Pursuit of Self-Interest",
+      "depth": 3,
+      "page": 57
+    },
+    {
+      "name": "Partnerships",
+      "depth": 1,
+      "page": 67
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 67
+    },
+    {
+      "name": "Traditional Noncorporate Business Associations",
+      "depth": 3,
+      "page": 67
+    },
+    {
+      "name": "Determining the Legal Nature of the Relationship",
+      "depth": 3,
+      "page": 73
+    },
+    {
+      "name": "Sharing Profits and Losses",
+      "depth": 3,
+      "page": 82
+    },
+    {
+      "name": "The Partner as Fiduciary",
+      "depth": 2,
+      "page": 88
+    },
+    {
+      "name": "The Common Law Duty of Loyalty",
+      "depth": 3,
+      "page": 88
+    },
+    {
+      "name": "Self-Dealing",
+      "depth": 3,
+      "page": 98
+    },
+    {
+      "name": "Fiduciary Duty and Management of the Partnership's Business and Affairs",
+      "depth": 3,
+      "page": 102
+    },
+    {
+      "name": "Contracting for Absolute Discretion",
+      "depth": 3,
+      "page": 106
+    },
+    {
+      "name": "The Duty of Care",
+      "depth": 3,
+      "page": 110
+    },
+    {
+      "name": "Dissolution and Dissociation",
+      "depth": 2,
+      "page": 114
+    },
+    {
+      "name": "The Basic Framework",
+      "depth": 3,
+      "page": 114
+    },
+    {
+      "name": "Wrongful Dissociation",
+      "depth": 3,
+      "page": 124
+    },
+    {
+      "name": "Fiduciary Limits on Dissolution “At Will”",
+      "depth": 3,
+      "page": 130
+    },
+    {
+      "name": "Fiduciary Limits on Expulsion of Unwanted Partners",
+      "depth": 3,
+      "page": 134
+    },
+    {
+      "name": "Contracting to Prevent Opportunistic Withdrawal: The Fiduciary Duties Owed by Withdrawing Partners",
+      "depth": 3,
+      "page": 141
+    },
+    {
+      "name": "Partners as Agents: Allocating the Risk of Loss in Transactions with Third Parties",
+      "depth": 2,
+      "page": 150
+    },
+    {
+      "name": "The Corporation and Its Governance",
+      "depth": 1,
+      "page": 159
+    },
+    {
+      "name": "The Corporate Form",
+      "depth": 2,
+      "page": 159
+    },
+    {
+      "name": "Defining Characteristics of the Corporate Form (as Distinguished from Traditional Partnerships)",
+      "depth": 3,
+      "page": 159
+    },
+    {
+      "name": "The Specialized Roles of Shareholders, Directors, and Officers",
+      "depth": 3,
+      "page": 160
+    },
+    {
+      "name": "The Big Picture",
+      "depth": 3,
+      "page": 164
+    },
+    {
+      "name": "Formation and Capital Structure",
+      "depth": 2,
+      "page": 165
+    },
+    {
+      "name": "Where to Incorporate: State Corporation Laws as Competing Sets of Standard Form Rules",
+      "depth": 3,
+      "page": 165
+    },
+    {
+      "name": "Formation: The Articles of Incorporation",
+      "depth": 3,
+      "page": 168
+    },
+    {
+      "name": "The Bylaws",
+      "depth": 3,
+      "page": 169
+    },
+    {
+      "name": "Using Stock to Allocate Equity Interests",
+      "depth": 3,
+      "page": 169
+    },
+    {
+      "name": "Determining Voting Rights: Using Articles and Bylaws to Change Legal Norms",
+      "depth": 3,
+      "page": 174
+    },
+    {
+      "name": "Looking Ahead: How Shareholders Act",
+      "depth": 3,
+      "page": 179
+    },
+    {
+      "name": "Shareholder Investment and Governance in Publicly Held Corporations",
+      "depth": 2,
+      "page": 199
+    },
+    {
+      "name": "How Publicly Held Corporations Are Different",
+      "depth": 3,
+      "page": 199
+    },
+    {
+      "name": "The Modern Era of Shareholder Governance in the Public Corporation",
+      "depth": 3,
+      "page": 209
+    },
+    {
+      "name": "Introduction",
+      "depth": 4,
+      "page": 209
+    },
+    {
+      "name": "The Push and Pull of Shareholder Governance in the Public Corporation",
+      "depth": 4,
+      "page": 215
+    },
+    {
+      "name": "Fiduciary Duty and the Business Judgment Rule",
+      "depth": 1,
+      "page": 265
+    },
+    {
+      "name": "Introduction to Director Discretion, Corporate Purpose, and the Role of Fiduciary Duty",
+      "depth": 2,
+      "page": 265
+    },
+    {
+      "name": "Overview",
+      "depth": 3,
+      "page": 265
+    },
+    {
+      "name": "Corporate Purpose",
+      "depth": 3,
+      "page": 267
+    },
+    {
+      "name": "The Legal Standard",
+      "depth": 3,
+      "page": 274
+    },
+    {
+      "name": "Benefit Corporations",
+      "depth": 3,
+      "page": 298
+    },
+    {
+      "name": "The Fiduciary Duty of Care",
+      "depth": 2,
+      "page": 302
+    },
+    {
+      "name": "The Interaction of Statutory and Common Law",
+      "depth": 3,
+      "page": 302
+    },
+    {
+      "name": "Policy Arguments for Limiting the Role of the Duty of Care",
+      "depth": 3,
+      "page": 326
+    },
+    {
+      "name": "Statutorily Authorized Exculpation Provisions: Contracting to Limit Shareholder Litigation as a Mechanism to Enforce the Duty of Care",
+      "depth": 3,
+      "page": 329
+    },
+    {
+      "name": "The Fiduciary Duty of Loyalty",
+      "depth": 2,
+      "page": 333
+    },
+    {
+      "name": "Introduction",
+      "depth": 3,
+      "page": 333
+    },
+    {
+      "name": "The Corporate Opportunity Doctrine",
+      "depth": 3,
+      "page": 333
+    },
+    {
+      "name": "Conflicting-Interest Transactions",
+      "depth": 3,
+      "page": 356
+    },
+    {
+      "name": "Self-Dealing",
+      "depth": 3,
+      "page": 364
+    },
+    {
+      "name": "Controlling Shareholder Self-Dealing",
+      "depth": 3,
+      "page": 370
+    },
+    {
+      "name": "The Statutory Treatment of Controlling Shareholders: The New Section 144",
+      "depth": 3,
+      "page": 392
+    },
+    {
+      "name": "Reincorporation as Self-Dealing",
+      "depth": 3,
+      "page": 395
+    },
+    {
+      "name": "Directors' Oversight and Monitoring Responsibilities",
+      "depth": 2,
+      "page": 407
+    },
+    {
+      "name": "Role of the Board in Selection, Oversight, and Compensation of CEO and Other Senior Executive Officers",
+      "depth": 3,
+      "page": 407
+    },
+    {
+      "name": "The Board of Directors' Responsibility to Ensure That the Corporation Conducts Its Business Lawfully",
+      "depth": 3,
+      "page": 430
+    },
+    {
+      "name": "Officer Liability",
+      "depth": 3,
+      "page": 452
+    },
+    {
+      "name": "Shareholder Litigation",
+      "depth": 1,
+      "page": 469
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 469
+    },
+    {
+      "name": "Demand Futility in Action",
+      "depth": 2,
+      "page": 486
+    },
+    {
+      "name": "Books and Records Request as a Litigation Tool",
+      "depth": 2,
+      "page": 498
+    },
+    {
+      "name": "Attorney's Fees",
+      "depth": 2,
+      "page": 509
+    },
+    {
+      "name": "Settlement",
+      "depth": 2,
+      "page": 518
+    },
+    {
+      "name": "Mergers and Other Transactions in, or Uses of, Control",
+      "depth": 1,
+      "page": 525
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 525
+    },
+    {
+      "name": "The Statutory Template",
+      "depth": 2,
+      "page": 526
+    },
+    {
+      "name": "Mergers",
+      "depth": 3,
+      "page": 526
+    },
+    {
+      "name": "Dissenter's Rights",
+      "depth": 3,
+      "page": 540
+    },
+    {
+      "name": "Contracting Around Appraisal and Voting Rights",
+      "depth": 2,
+      "page": 544
+    },
+    {
+      "name": "Introductory Note",
+      "depth": 3,
+      "page": 544
+    },
+    {
+      "name": "Sale of Assets",
+      "depth": 3,
+      "page": 544
+    },
+    {
+      "name": "Triangular Mergers",
+      "depth": 3,
+      "page": 545
+    },
+    {
+      "name": "Compulsory Share Exchanges",
+      "depth": 3,
+      "page": 546
+    },
+    {
+      "name": "Negotiated Stock Purchase",
+      "depth": 3,
+      "page": 546
+    },
+    {
+      "name": "De Facto Mergers",
+      "depth": 3,
+      "page": 547
+    },
+    {
+      "name": "Cash-Out Mergers and the Weinberger Approach",
+      "depth": 2,
+      "page": 548
+    },
+    {
+      "name": "Cleansing After Weinberger",
+      "depth": 2,
+      "page": 565
+    },
+    {
+      "name": "Obtaining Business Judgment Rule Protection for “Controller Mergers”",
+      "depth": 3,
+      "page": 565
+    },
+    {
+      "name": "Appraisal After Weinberger",
+      "depth": 2,
+      "page": 584
+    },
+    {
+      "name": "Valuation Under Statutory Appraisal",
+      "depth": 3,
+      "page": 584
+    },
+    {
+      "name": "Hostile Challenges to Incumbent Board Control",
+      "depth": 1,
+      "page": 605
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 605
+    },
+    {
+      "name": "Hostile Tender Offers as Distinguished from Friendly Mergers",
+      "depth": 3,
+      "page": 605
+    },
+    {
+      "name": "Hostile Takeovers: The Debate",
+      "depth": 3,
+      "page": 605
+    },
+    {
+      "name": "Federal Law Designed to Protect Shareholders in Making Decisions in Response to Tender Offers",
+      "depth": 3,
+      "page": 606
+    },
+    {
+      "name": "Defensive Tactics by Boards and Managers",
+      "depth": 3,
+      "page": 607
+    },
+    {
+      "name": "State Antitakeover Laws",
+      "depth": 3,
+      "page": 608
+    },
+    {
+      "name": "New Frontiers: Shareholder Activism",
+      "depth": 3,
+      "page": 610
+    },
+    {
+      "name": "Judicial Review of Defensive Tactics",
+      "depth": 2,
+      "page": 610
+    },
+    {
+      "name": "The Enhanced Scrutiny Framework—The Unocal Doctrine",
+      "depth": 3,
+      "page": 610
+    },
+    {
+      "name": "The Poison Pill",
+      "depth": 3,
+      "page": 621
+    },
+    {
+      "name": "Judicial Review of Voting Contest Defenses",
+      "depth": 3,
+      "page": 634
+    },
+    {
+      "name": "Beyond Tender Offers: Enhanced Scrutiny in the Director Election Context",
+      "depth": 3,
+      "page": 652
+    },
+    {
+      "name": "Enhanced Scrutiny in the Shareholder Activism Setting",
+      "depth": 3,
+      "page": 664
+    },
+    {
+      "name": "The Revlon Rule: Directors' Duty to Get the Best Price in the Sale or Breakup of the Company",
+      "depth": 3,
+      "page": 696
+    },
+    {
+      "name": "Cleansing Post-Closing Revlon and Unocal Claims",
+      "depth": 3,
+      "page": 710
+    },
+    {
+      "name": "Illiquidity and Oppression in Non-Publicly Traded Corporations",
+      "depth": 1,
+      "page": 715
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 715
+    },
+    {
+      "name": "Contracting as a Device to Limit the Majority's Discretion",
+      "depth": 2,
+      "page": 718
+    },
+    {
+      "name": "Agreements as to Director Decisions",
+      "depth": 3,
+      "page": 718
+    },
+    {
+      "name": "Agreements as to Shareholder Decisions",
+      "depth": 3,
+      "page": 729
+    },
+    {
+      "name": "Fiduciary Duty and Threat of Dissolution as a Check on Opportunistic Majority Action",
+      "depth": 2,
+      "page": 735
+    },
+    {
+      "name": "Traditional Judicial Deference to Majority's Discretion",
+      "depth": 3,
+      "page": 735
+    },
+    {
+      "name": "The Partnership Analogy as a Basis for Enhancing Minority Shareholders' Rights",
+      "depth": 3,
+      "page": 740
+    },
+    {
+      "name": "The Modern Approach to Involuntary Dissolution",
+      "depth": 3,
+      "page": 756
+    },
+    {
+      "name": "Delaware's Approach to Oppression of Minority Shareholders",
+      "depth": 2,
+      "page": 771
+    },
+    {
+      "name": "Share Repurchase Agreements",
+      "depth": 2,
+      "page": 780
+    },
+    {
+      "name": "In the Close Corporation Setting",
+      "depth": 3,
+      "page": 780
+    },
+    {
+      "name": "Illiquidity in Non-Publicly Traded Corporations That Are Not Closely Held",
+      "depth": 3,
+      "page": 785
+    },
+    {
+      "name": "The Limited Liability Company",
+      "depth": 1,
+      "page": 797
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 797
+    },
+    {
+      "name": "The Emergence and Evolution of the Limited Liability Company",
+      "depth": 3,
+      "page": 797
+    },
+    {
+      "name": "Lack of Uniformity in Statutory Models and Delaware's Dominance",
+      "depth": 3,
+      "page": 798
+    },
+    {
+      "name": "The LLC's Key Actors—Members and Managers",
+      "depth": 3,
+      "page": 801
+    },
+    {
+      "name": "Planning for the LLC",
+      "depth": 2,
+      "page": 802
+    },
+    {
+      "name": "Formation and Its Pitfalls",
+      "depth": 3,
+      "page": 802
+    },
+    {
+      "name": "How Members and Managers Act: Allocating Management and Control Rights",
+      "depth": 3,
+      "page": 810
+    },
+    {
+      "name": "Fiduciary and Contractual Duties",
+      "depth": 2,
+      "page": 819
+    },
+    {
+      "name": "The Special Litigation Committee: Zapata in the Contractual Entity Setting",
+      "depth": 2,
+      "page": 836
+    },
+    {
+      "name": "The Problem of Illiquidity and Oppression in Non-Publicly Traded LLCs",
+      "depth": 2,
+      "page": 848
+    },
+    {
+      "name": "Overview",
+      "depth": 3,
+      "page": 848
+    },
+    {
+      "name": "Oppression as a Ground for Involuntary Judicial Dissolution",
+      "depth": 3,
+      "page": 849
+    },
+    {
+      "name": "Delaware and the “Impracticable” Ground for Judicial Dissolution",
+      "depth": 3,
+      "page": 858
+    },
+    {
+      "name": "A Final Reflection on Your LLC Journey",
+      "depth": 2,
+      "page": 864
+    },
+    {
+      "name": "The Corporation as a Device to Allocate Risk",
+      "depth": 1,
+      "page": 867
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 867
+    },
+    {
+      "name": "Piercing the Veil",
+      "depth": 2,
+      "page": 873
+    },
+    {
+      "name": "Introduction",
+      "depth": 3,
+      "page": 873
+    },
+    {
+      "name": "Piercing the Corporate Veil to Reach Individuals",
+      "depth": 3,
+      "page": 879
+    },
+    {
+      "name": "Piercing the Corporate Veil to Reach Incorporated Shareholders",
+      "depth": 3,
+      "page": 902
+    },
+    {
+      "name": "Piercing in LLCs",
+      "depth": 3,
+      "page": 919
+    },
+    {
+      "name": "The Overlap of Corporate Separateness and Fiduciary Principles in Newer Entity Structures",
+      "depth": 3,
+      "page": 925
+    },
+    {
+      "name": "Disclosure and Corporate Regulation",
+      "depth": 1,
+      "page": 931
+    },
+    {
+      "name": "Introduction: Disclosure's Distinctive Role",
+      "depth": 2,
+      "page": 931
+    },
+    {
+      "name": "Mandatory Disclosure",
+      "depth": 2,
+      "page": 933
+    },
+    {
+      "name": "The Issuance of Securities",
+      "depth": 3,
+      "page": 933
+    },
+    {
+      "name": "Required Disclosures in Proxy Solicitations",
+      "depth": 3,
+      "page": 940
+    },
+    {
+      "name": "Post-Issuance Disclosure Obligations of Public Companies",
+      "depth": 3,
+      "page": 941
+    },
+    {
+      "name": "Private Securities Fraud Enforcement via Implied Federal Causes of Action",
+      "depth": 2,
+      "page": 941
+    },
+    {
+      "name": "Introduction to Rules 10b-5 and 14a-9",
+      "depth": 3,
+      "page": 941
+    },
+    {
+      "name": "The Activist Supreme Court of the 1960s Provides Implied Private Rights of Action for Rules 10b-5 and 14a-9",
+      "depth": 3,
+      "page": 943
+    },
+    {
+      "name": "The Shift to Restricting the Private Right of Action",
+      "depth": 3,
+      "page": 951
+    },
+    {
+      "name": "Clarifying the Elements of the Private Right of Action",
+      "depth": 3,
+      "page": 962
+    },
+    {
+      "name": "State Disclosure Law's Use of Federal Disclosure in Fiduciary Duties",
+      "depth": 2,
+      "page": 995
+    },
+    {
+      "name": "Insider Trading",
+      "depth": 1,
+      "page": 1013
+    },
+    {
+      "name": "The Common Law Foundation",
+      "depth": 2,
+      "page": 1013
+    },
+    {
+      "name": "Rule 10b-5 as a Regulator of Insider Trading",
+      "depth": 2,
+      "page": 1016
+    },
+    {
+      "name": "Classical Insider Trading as Fraud",
+      "depth": 3,
+      "page": 1017
+    },
+    {
+      "name": "Misappropriation as Fraud Under Rule 10b-5",
+      "depth": 3,
+      "page": 1037
+    },
+    {
+      "name": "Extensions of the Classical and Misappropriation Liability and Insider Trading Regulation from Other Federal Law",
+      "depth": 2,
+      "page": 1050
+    },
+    {
+      "name": "Tippee Liability",
+      "depth": 3,
+      "page": 1050
+    },
+    {
+      "name": "Insider Trading in Tender Offers Under §14(e) and Rule 14e-3",
+      "depth": 3,
+      "page": 1061
+    },
+    {
+      "name": "Regulation FD",
+      "depth": 3,
+      "page": 1065
+    },
+    {
+      "name": "Regulation of Short-Swing Insider Trading Under §16 of the Securities Exchange Act of 1934",
+      "depth": 3,
+      "page": 1075
+    },
+    {
+      "name": "Table of Cases",
+      "depth": 1,
+      "page": 1079
+    },
+    {
+      "name": "Index",
+      "depth": 1,
+      "page": 1089
+    }
+  ],
+  "processedAt": "2025-09-23T12:46:26.455Z"
+}

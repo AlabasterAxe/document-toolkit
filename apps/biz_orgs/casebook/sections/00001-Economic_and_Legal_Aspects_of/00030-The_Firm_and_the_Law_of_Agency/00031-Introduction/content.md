@@ -1,0 +1,26 @@
+
+This section examines the role of agency law. The American Law Institute has been at the forefront in synthesizing and explaining agency law for nearly a century. The first Restatement of the Law of Agency was adopted in 1933, the second in 1958, and the third in 2006. Each of the Restatements continues to be cited and has precedential value, and the underlying rules and concepts have changed relatively little from the first to the third version, although the nature of relations within the economy and within society generally have changed significantly.
+
+The Restatement (Third) of Agency ^14 explains the field of agency law as follows:
+
+
+#### Abstract
+
+The subject matter of this Restatement, the common law of agency, encompasses the legal consequences of consensual relationships in which one person (the "principal") manifests assent that another person (the "agent") shall, subject to the principal's right of control, have power to affect the principal's legal relations through the agent's acts and on the principal's behalf. Relationships of agency usually contemplate three parties - the agent, the principal, and third parties with whom the agent interacts in some manner. Agents of the same principal may also interact, with legal consequences for their mutual principal. This Restatement also embraces the situation in which the legal consequences of agency apply to a relationship in which an actor appears to third parties to be acting as a person's agent but the relationship between the putative principal and the actor lacks elements of the common-law definition of agency.
+
+Many questions governed by common-law agency doctrines involve the legal consequences of an agent's interactions with third persons. Such interactions may create legal rights and duties as between the principal and the third party, the agent and the third party, and the principal and the agent. The common law of agency also governs the legal consequences of the relationship of the agent and the principal with each other, which is in many respects defined and governed by any agreement between them. Agency doctrine also imputes the agent's knowledge to the principal in many circumstances. ^15
+
+
+Included in the field of agency law is the relationship between employer and employee. In 2015, the American Law Institute for the first time provided a separate Restatement of some of the rules that apply only to employer-employee relationships. There is substantial overlap between the subjects covered by the Restatement of Employment Law and the Restatement (Third) of Agency, and there are many important subjects - particularly the question of when an employee's actions will be attributed to or otherwise bind the employer-that are left entirely to the Restatement (Third) of Agency.
+
+Agency law governs and affects relationships in many settings that are far afield from the subject of this course. What you learn in this section will have applications in whatever area of law you may practice or intersect. For example, suppose someone agrees to be a driver for a school event and an accident occurs due to the driver's negligence. Is the driver subject to liability to injured passengers? Is the school subject to liability for the driver's negligence? If so, does that liability extend to both the institution as well as the passengers, or is the institution responsible for the driver's damages as well as the damages suffered by the passengers? The law of agency covers these and myriad other ordinary life relationships and events in which one person consents to act on behalf of another (even as an unpaid volunteer).
+
+Agency law also has deep and direct implications for the governance of a sole proprietorship or business association of any type or size. In other words, agency law is of central concern to enterprises ranging from a single-location fast-food restaurant to a multinational enterprise such as Apple, Microsoft, Tesla, or McDonald's. Moreover, 15. Id. Introduction.
+as Professor Amy Westbrook has cogently described, acting through an agent is the essence of conducting business as a firm:
+
+Intangible legal persons like corporations require natural persons to function in the material world. Agency, whether or not articulated as "agency law," is thus entailed in the idea of an intangible legal person. Unsurprisingly, perhaps, agency law has become the accepted articulation of not only the basic structure of the business association but also much of the social fabric of commerce, including the complexity of relationships between an entity, those who operate on its behalf, and those with which or whom it interacts. Any of these actors may be natural or legal persons. The common law of agency is an imagination of a social order, how we describe the underlying structure of obligations and expectations among social actors. ^16
+
+As you proceed through this section, keep Professor Westbrook's closing statement in mind. What role does the law of agency play in creating the society you imagine and seek?
+
+
+[^0]: 14. American Law Institute, Restatement (Third) of Agency (2006).

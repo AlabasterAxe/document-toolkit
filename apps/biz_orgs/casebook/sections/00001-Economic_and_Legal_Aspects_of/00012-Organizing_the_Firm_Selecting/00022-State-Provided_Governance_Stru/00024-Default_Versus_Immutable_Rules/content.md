@@ -1,0 +1,8 @@
+
+Most of the off-the-rack rules found in each state-provided standard form are "enabling" in the sense that they provide parties with default rules that govern the relationship if the parties do not provide otherwise. To the extent that parties prefer, they may modify or change these default rules.
+
+In some instances, however, the rules provided by law are immutable and cannot be "trumped" by private ordering. Some such mandatory rules exist because lawmakers fear the negative effect on third parties of allowing firms to adopt a different rule. Other immutable rules may be designed to protect firm members from their own contracting mistakes.
+
+Every good business lawyer must know the standard form rules - the legal bargain - that are provided by the employment relationship and by corporate, partnership, and limited liability company law. However, it is critically important to understand which of these rules are default in nature, how the default rules of each form differ, and what makes these rules efficient or inefficient for a particular set of prospective team members. It is equally crucial to understand which rules are immutable, and whether these immutable rules will serve the interests of a particular member of the firm.
+
+As you proceed through this book, be sure to determine whether a rule falls into the default or immutable category. And do not be surprised if you encounter some rules that are partially default and partially immutable. For each rule consider what economic or legal factors explain both its content and its immutable or default character. And be ever on the lookout for misguided paternalism.

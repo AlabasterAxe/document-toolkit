@@ -1,0 +1,2 @@
+
+The classical firm ^1 is a business owned and managed by one person. In law, the classical firm is referred to as a sole proprietorship, and the owner as the sole proprietor. Traditionally, economists have examined the classical firm as a starting point for understanding the nature of more complex firms that are organized with multiple owners. In this part and throughout this chapter, we highlight the most important insights and issues economists have uncovered. We begin with a look at how economists analyze and describe the classical firm.

@@ -1,0 +1,17 @@
+
+Participants in our market economy are constantly faced with investment decisions. Every participant has a store of human capital-a set of skills or an ability to render services. And many participants also have money capital - cash, cash equivalents, or other investment property that can be valued in terms of money. Economists assume that a rational person chooses her career, and adjusts that choice as circumstances change, in order to maximize the value of her human capital. Likewise, rational individuals with money capital deploy and redeploy those resources in a search for maximum value.
+
+The search for maximum value requires rational investors to take both a comparative and an ex ante perspective. ^11 The perspective is comparative because a determination of the best investment decision involves a weighing of plausible alternatives. The perspective is ex ante because the goal is to predict which investment strategy will yield the optimal result. It may turn out afterwards, from an ex post perspective, that some road other than the one actually taken would have been more advantageous. Nevertheless, all of us must make our investment decisions before actual outcomes are known.
+
+Consider the investment situations of Sharon and Jake. Sharon is a sales representative for a national brewery. Jake, a friend of Sharon, is the head brewmaster at a different firm. Jake and Sharon have discussed the possibility of joining forces in a brewing venture. Jake's role would be to manufacture a high-quality beer with a unique and pleasing taste. Sharon's role would be to develop a substantial market for this product. Recently, Sharon inherited $200,000. She is now considering the following three alternative uses of her human capital and the inherited money capital.
+
+Alternative 1. Sharon can continue to work for her current employer and invest $200,000 in U.S. Government bonds, maturing in one year and paying interest at the rate of 8 percent per year. At the maturity date Sharon would be entitled to receive $216,000.
+
+Alternative 2. Sharon can continue to work for her current employer and invest $200,000 in bonds issued by the Atomic Energy Corporation, which mature in one year and promise to pay interest at the rate of 20 percent per year. At the maturity date, Sharon would be entitled to receive $240,000.
+
+Alternative 3. Sharon can quit her job and invest both her human and newly acquired money capital in the brewery venture with Jake. Sharon believes that a $200,000 investment in the brewery could be worth $500,000 in one year, but she realizes that less favorable outcomes are quite possible.
+
+In the following sections we will identify the economic factors that might influence Sharon's investment decision. Keep in mind that should Sharon favor Alternative 3, she will be able to pursue it only if Jake also believes that the proposed venture is the best use of his capital.
+
+
+[^0]: 11. Ex ante literally means "from before." The choice of heads or tails before a coin is flipped is a decision made from an ex ante perspective-that is, before we know the outcome. Ex post literally means "from after." Once the coin is flipped, we know the outcome. Any decisions related to that outcome are made from an ex post perspective.
