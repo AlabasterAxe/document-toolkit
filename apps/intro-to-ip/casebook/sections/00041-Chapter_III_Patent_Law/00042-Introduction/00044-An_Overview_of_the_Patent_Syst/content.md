@@ -1,0 +1,2 @@
+
+It is important to appreciate some basic attributes of the patent system before delving into the cases. This is a complex body of law with its own terminology and tradition, and one must become acquainted with the rudiments before diving into the details.

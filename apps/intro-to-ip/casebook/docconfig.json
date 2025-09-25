@@ -1,0 +1,823 @@
+{
+  "type": "document-ocr",
+  "bookName": "I",
+  "version": "1.0",
+  "config": {
+    "pageOffset": 12,
+    "ocrProvider": "gemini",
+    "sectionFormat": "markdown"
+  },
+  "toc": [
+    {
+      "name": "Chapter I: Introduction",
+      "depth": 1,
+      "page": 1
+    },
+    {
+      "name": "Philosophical Perspectives",
+      "depth": 2,
+      "page": 2
+    },
+    {
+      "name": "The Natural Rights Perspective",
+      "depth": 3,
+      "page": 3
+    },
+    {
+      "name": "The Personhood Perspective",
+      "depth": 3,
+      "page": 7
+    },
+    {
+      "name": "Distributive and Social Justice",
+      "depth": 3,
+      "page": 11
+    },
+    {
+      "name": "Autonomy",
+      "depth": 3,
+      "page": 16
+    },
+    {
+      "name": "The Utilitarian/Economic Incentive Perspective",
+      "depth": 3,
+      "page": 17
+    },
+    {
+      "name": "Overview of Intellectual Property",
+      "depth": 2,
+      "page": 30
+    },
+    {
+      "name": "Trade Secret",
+      "depth": 3,
+      "page": 34
+    },
+    {
+      "name": "Utility Patent",
+      "depth": 3,
+      "page": 34
+    },
+    {
+      "name": "Design Patent",
+      "depth": 3,
+      "page": 35
+    },
+    {
+      "name": "Copyright",
+      "depth": 3,
+      "page": 35
+    },
+    {
+      "name": "Trademark/Trade Dress",
+      "depth": 3,
+      "page": 36
+    },
+    {
+      "name": "Chapter II: Trade Secret Law",
+      "depth": 1,
+      "page": 41
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 42
+    },
+    {
+      "name": "Historical Background",
+      "depth": 3,
+      "page": 42
+    },
+    {
+      "name": "Theoretical Justifications for Trade Secrets",
+      "depth": 3,
+      "page": 43
+    },
+    {
+      "name": "Overview of Modern Trade Secret Protection",
+      "depth": 3,
+      "page": 47
+    },
+    {
+      "name": "Subject Matter",
+      "depth": 2,
+      "page": 50
+    },
+    {
+      "name": "Defining Trade Secrets",
+      "depth": 3,
+      "page": 50
+    },
+    {
+      "name": "Reasonable Efforts to Maintain Secrecy",
+      "depth": 3,
+      "page": 64
+    },
+    {
+      "name": "Disclosure of Trade Secrets",
+      "depth": 3,
+      "page": 72
+    },
+    {
+      "name": "Misappropriation of Trade Secrets",
+      "depth": 2,
+      "page": 80
+    },
+    {
+      "name": "Improper Means",
+      "depth": 3,
+      "page": 80
+    },
+    {
+      "name": "Confidential Relationship",
+      "depth": 3,
+      "page": 86
+    },
+    {
+      "name": "Proper Means and Immunity",
+      "depth": 2,
+      "page": 93
+    },
+    {
+      "name": "Independent Discovery and Reverse Engineering",
+      "depth": 3,
+      "page": 93
+    },
+    {
+      "name": "Public Policy Limitation",
+      "depth": 3,
+      "page": 101
+    },
+    {
+      "name": "Agreements to Keep Secrets",
+      "depth": 2,
+      "page": 107
+    },
+    {
+      "name": "The Case of Departing Employees",
+      "depth": 2,
+      "page": 112
+    },
+    {
+      "name": "Confidentiality and Use of Trade Secrets",
+      "depth": 3,
+      "page": 113
+    },
+    {
+      "name": "Ownership of Employee Inventions",
+      "depth": 3,
+      "page": 115
+    },
+    {
+      "name": "Nonsolicitation Agreements",
+      "depth": 3,
+      "page": 119
+    },
+    {
+      "name": "Noncompetition Agreements",
+      "depth": 3,
+      "page": 120
+    },
+    {
+      "name": "Remedies",
+      "depth": 2,
+      "page": 142
+    },
+    {
+      "name": "Injunctions",
+      "depth": 3,
+      "page": 143
+    },
+    {
+      "name": "Damages and Disgorgement",
+      "depth": 3,
+      "page": 150
+    },
+    {
+      "name": "State Criminal Trade Secret Statutes",
+      "depth": 3,
+      "page": 152
+    },
+    {
+      "name": "Federal Criminal Trade Secret Liability",
+      "depth": 3,
+      "page": 153
+    },
+    {
+      "name": "Federal Preemption",
+      "depth": 2,
+      "page": 154
+    },
+    {
+      "name": "Chapter III: Patent Law",
+      "depth": 1,
+      "page": 163
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 166
+    },
+    {
+      "name": "Historical Background",
+      "depth": 3,
+      "page": 166
+    },
+    {
+      "name": "An Overview of the Patent System",
+      "depth": 3,
+      "page": 171
+    },
+    {
+      "name": "Requirements for Patentability",
+      "depth": 4,
+      "page": 172
+    },
+    {
+      "name": "Rights Conferred by a Patent",
+      "depth": 4,
+      "page": 173
+    },
+    {
+      "name": "Patent Prosecution",
+      "depth": 4,
+      "page": 175
+    },
+    {
+      "name": "Theories of Patent Law",
+      "depth": 3,
+      "page": 178
+    },
+    {
+      "name": "The Elements of Patentability",
+      "depth": 2,
+      "page": 179
+    },
+    {
+      "name": "Novelty",
+      "depth": 3,
+      "page": 179
+    },
+    {
+      "name": "Nonobviousness",
+      "depth": 3,
+      "page": 216
+    },
+    {
+      "name": "Utility",
+      "depth": 3,
+      "page": 243
+    },
+    {
+      "name": "Disclosure",
+      "depth": 3,
+      "page": 253
+    },
+    {
+      "name": "Patentable Subject Matter",
+      "depth": 3,
+      "page": 279
+    },
+    {
+      "name": "Inventorship",
+      "depth": 2,
+      "page": 322
+    },
+    {
+      "name": "Administrative Patent Review",
+      "depth": 2,
+      "page": 331
+    },
+    {
+      "name": "Claims and Claim Construction",
+      "depth": 2,
+      "page": 339
+    },
+    {
+      "name": "Patent Claiming and Claim Formats",
+      "depth": 3,
+      "page": 340
+    },
+    {
+      "name": "Judicial Claim Construction",
+      "depth": 3,
+      "page": 343
+    },
+    {
+      "name": "Canons of Claim Construction",
+      "depth": 3,
+      "page": 361
+    },
+    {
+      "name": "The Special Case (and Problems) of Functional Claims – §112(f)",
+      "depth": 3,
+      "page": 370
+    },
+    {
+      "name": "Claim Indefiniteness",
+      "depth": 3,
+      "page": 374
+    },
+    {
+      "name": "Infringement",
+      "depth": 2,
+      "page": 382
+    },
+    {
+      "name": "Direct Infringement",
+      "depth": 3,
+      "page": 382
+    },
+    {
+      "name": "Indirect Infringement",
+      "depth": 3,
+      "page": 398
+    },
+    {
+      "name": "Defenses",
+      "depth": 2,
+      "page": 416
+    },
+    {
+      "name": "Invalidity and Presumption of Validity",
+      "depth": 3,
+      "page": 416
+    },
+    {
+      "name": "\"With Authority\"",
+      "depth": 3,
+      "page": 418
+    },
+    {
+      "name": "The \"Experimental Use\" Defense",
+      "depth": 3,
+      "page": 421
+    },
+    {
+      "name": "Prior User Rights",
+      "depth": 3,
+      "page": 426
+    },
+    {
+      "name": "Inequitable Conduct",
+      "depth": 3,
+      "page": 427
+    },
+    {
+      "name": "Prosecution Laches",
+      "depth": 3,
+      "page": 436
+    },
+    {
+      "name": "Laches, Statute of Limitations, and Equitable Estoppel",
+      "depth": 3,
+      "page": 437
+    },
+    {
+      "name": "Patent Misuse",
+      "depth": 3,
+      "page": 438
+    },
+    {
+      "name": "Remedies",
+      "depth": 2,
+      "page": 446
+    },
+    {
+      "name": "Injunctions",
+      "depth": 3,
+      "page": 446
+    },
+    {
+      "name": "Damages",
+      "depth": 3,
+      "page": 452
+    },
+    {
+      "name": "Enhanced Damages",
+      "depth": 3,
+      "page": 464
+    },
+    {
+      "name": "Attorney Fees",
+      "depth": 3,
+      "page": 471
+    },
+    {
+      "name": "Design Patents",
+      "depth": 2,
+      "page": 472
+    },
+    {
+      "name": "Requirements for Patentability",
+      "depth": 3,
+      "page": 474
+    },
+    {
+      "name": "Ornamentality/Non-functionality",
+      "depth": 3,
+      "page": 478
+    },
+    {
+      "name": "Infringement",
+      "depth": 3,
+      "page": 484
+    },
+    {
+      "name": "Remedies",
+      "depth": 3,
+      "page": 499
+    },
+    {
+      "name": "International Patent Law",
+      "depth": 2,
+      "page": 504
+    },
+    {
+      "name": "Procedural Rules",
+      "depth": 3,
+      "page": 504
+    },
+    {
+      "name": "Substantive Harmonization and GATT-TRIPS",
+      "depth": 3,
+      "page": 506
+    },
+    {
+      "name": "Federal Preemption",
+      "depth": 2,
+      "page": 509
+    },
+    {
+      "name": "Chapter IV: Copyright Law",
+      "depth": 1,
+      "page": 513
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 516
+    },
+    {
+      "name": "Brief History of Copyright Protection",
+      "depth": 3,
+      "page": 516
+    },
+    {
+      "name": "An Overview of the Copyright Regime",
+      "depth": 3,
+      "page": 520
+    },
+    {
+      "name": "Philosophical Perspectives on Copyright Protection",
+      "depth": 3,
+      "page": 523
+    },
+    {
+      "name": "Requirements",
+      "depth": 2,
+      "page": 525
+    },
+    {
+      "name": "Original Works of Authorship",
+      "depth": 3,
+      "page": 525
+    },
+    {
+      "name": "Fixation in a Tangible Medium of Expression",
+      "depth": 3,
+      "page": 539
+    },
+    {
+      "name": "Authorship",
+      "depth": 3,
+      "page": 545
+    },
+    {
+      "name": "Formalities",
+      "depth": 3,
+      "page": 551
+    },
+    {
+      "name": "Restoration of Foreign Copyrighted Works",
+      "depth": 3,
+      "page": 558
+    },
+    {
+      "name": "Copyrightable Subject Matter",
+      "depth": 2,
+      "page": 559
+    },
+    {
+      "name": "The Domain and Scope of Copyright Protection",
+      "depth": 3,
+      "page": 559
+    },
+    {
+      "name": "Limitations on Copyrightability: Distinguishing Function and Expression",
+      "depth": 3,
+      "page": 569
+    },
+    {
+      "name": "Ownership and Duration",
+      "depth": 2,
+      "page": 619
+    },
+    {
+      "name": "Initial Ownership of Copyrights",
+      "depth": 3,
+      "page": 619
+    },
+    {
+      "name": "Duration and Renewal",
+      "depth": 3,
+      "page": 647
+    },
+    {
+      "name": "Division, Transfer, and Reclaiming of Copyrights",
+      "depth": 3,
+      "page": 655
+    },
+    {
+      "name": "Rights and Infringement",
+      "depth": 2,
+      "page": 660
+    },
+    {
+      "name": "Direct Infringement",
+      "depth": 3,
+      "page": 769
+    },
+    {
+      "name": "Indirect Infringement",
+      "depth": 3,
+      "page": 772
+    },
+    {
+      "name": "Defenses",
+      "depth": 2,
+      "page": 796
+    },
+    {
+      "name": "Fair Use",
+      "depth": 3,
+      "page": 796
+    },
+    {
+      "name": "Online Service Provider Safe Harbors",
+      "depth": 3,
+      "page": 893
+    },
+    {
+      "name": "Other Defenses",
+      "depth": 3,
+      "page": 913
+    },
+    {
+      "name": "Remedies",
+      "depth": 2,
+      "page": 914
+    },
+    {
+      "name": "Injunctions",
+      "depth": 3,
+      "page": 914
+    },
+    {
+      "name": "Damages",
+      "depth": 3,
+      "page": 918
+    },
+    {
+      "name": "Attorney's Fees and Costs",
+      "depth": 3,
+      "page": 925
+    },
+    {
+      "name": "Small Claims Enforcement",
+      "depth": 3,
+      "page": 926
+    },
+    {
+      "name": "Criminal Enforcement",
+      "depth": 3,
+      "page": 927
+    },
+    {
+      "name": "International Copyright Law",
+      "depth": 2,
+      "page": 931
+    },
+    {
+      "name": "Evolution of the International Copyright System and U.S. Participation",
+      "depth": 3,
+      "page": 931
+    },
+    {
+      "name": "International Copyright Treaties",
+      "depth": 3,
+      "page": 920
+    },
+    {
+      "name": "Protection of U.S. Works Against Infringement Abroad",
+      "depth": 3,
+      "page": 937
+    },
+    {
+      "name": "Protection of Foreign Works Against Infringement in the United States",
+      "depth": 3,
+      "page": 941
+    },
+    {
+      "name": "Chapter V: Trademark Law",
+      "depth": 1,
+      "page": 945
+    },
+    {
+      "name": "Introduction",
+      "depth": 2,
+      "page": 947
+    },
+    {
+      "name": "What can be protected as a trademark?",
+      "depth": 2,
+      "page": 955
+    },
+    {
+      "name": "Establishment of Trademark Rights",
+      "depth": 2,
+      "page": 960
+    },
+    {
+      "name": "Distinctiveness",
+      "depth": 3,
+      "page": 960
+    },
+    {
+      "name": "Priority",
+      "depth": 3,
+      "page": 1017
+    },
+    {
+      "name": "Trademark Office Procedures",
+      "depth": 3,
+      "page": 1036
+    },
+    {
+      "name": "Incontestability",
+      "depth": 3,
+      "page": 1049
+    },
+    {
+      "name": "Infringement",
+      "depth": 2,
+      "page": 1054
+    },
+    {
+      "name": "Threshold Issue: Trademark Use",
+      "depth": 3,
+      "page": 1054
+    },
+    {
+      "name": "Trademark Infringement and Related Doctrines",
+      "depth": 3,
+      "page": 1059
+    },
+    {
+      "name": "Types of Confusion",
+      "depth": 3,
+      "page": 1069
+    },
+    {
+      "name": "Cybersquatting",
+      "depth": 3,
+      "page": 1113
+    },
+    {
+      "name": "Indirect Infringement",
+      "depth": 3,
+      "page": 1116
+    },
+    {
+      "name": "False Advertising",
+      "depth": 3,
+      "page": 1128
+    },
+    {
+      "name": "Defenses",
+      "depth": 2,
+      "page": 1128
+    },
+    {
+      "name": "Abandonment",
+      "depth": 3,
+      "page": 1129
+    },
+    {
+      "name": "Exhaustion/First Sale",
+      "depth": 3,
+      "page": 1143
+    },
+    {
+      "name": "Fair Use",
+      "depth": 3,
+      "page": 1145
+    },
+    {
+      "name": "Other Defenses",
+      "depth": 3,
+      "page": 1168
+    },
+    {
+      "name": "Remedies",
+      "depth": 2,
+      "page": 1171
+    },
+    {
+      "name": "Injunctions",
+      "depth": 3,
+      "page": 1171
+    },
+    {
+      "name": "Damages",
+      "depth": 3,
+      "page": 1172
+    },
+    {
+      "name": "International Issues",
+      "depth": 2,
+      "page": 1187
+    },
+    {
+      "name": "U.S. Trademarks Abroad: The New Internationalization",
+      "depth": 3,
+      "page": 1187
+    },
+    {
+      "name": "Foreign Trademarks in the United States: Limited Internationalization",
+      "depth": 3,
+      "page": 1189
+    },
+    {
+      "name": "Note on the \"Gray Market\"",
+      "depth": 3,
+      "page": 1190
+    },
+    {
+      "name": "Worldwide Famous Marks",
+      "depth": 3,
+      "page": 1193
+    },
+    {
+      "name": "Chapter VI: State IP Protections",
+      "depth": 1,
+      "page": 1195
+    },
+    {
+      "name": "Federal Preemption",
+      "depth": 2,
+      "page": 1196
+    },
+    {
+      "name": "Patent Preemption",
+      "depth": 3,
+      "page": 1206
+    },
+    {
+      "name": "Copyright Preemption",
+      "depth": 3,
+      "page": 1212
+    },
+    {
+      "name": "Trademark Preemption",
+      "depth": 3,
+      "page": 1223
+    },
+    {
+      "name": "Misappropriation",
+      "depth": 2,
+      "page": 1226
+    },
+    {
+      "name": "Idea Submissions",
+      "depth": 2,
+      "page": 1243
+    },
+    {
+      "name": "Right of Publicity",
+      "depth": 2,
+      "page": 1263
+    }
+  ],
+  "processedAt": "2025-09-23T12:46:26.455Z",
+  "pdfReferences": [
+    {
+      "filename": "intro_to_ip_ch1-2_extract.pdf",
+      "startPage": 1
+    },
+    {
+      "filename": "intro_to_ip_ch3.pdf",
+      "startPage": 163
+    }
+  ]
+}
